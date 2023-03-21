@@ -7,7 +7,7 @@ Im Ryan, a software and web developer from Ohio. I enjoy programming in Python a
 
 # Current Projects:
 
-## Terrace Dashboard: <img src="python.svg" title="Python"> <img src="fastapi.svg" title="Python"> <img src="svelte.svg" title="Svelte"> <img src="tailwind.svg" title="FastAPI">
+## Terrace Dashboard: <img src="python.svg" title="Python"> <img src="fastapi.svg" title="FastAPI"> <img src="svelte.svg" title="Svelte"> <img src="tailwind.svg" title="Tailwind">
 
 A Dashboard/Homepage app that has some handy features like weather, time, bookmarks and available service communication protocol to interact standalone service clients
 
