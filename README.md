@@ -1,4 +1,4 @@
-Im Ryan, a software and web developer from Ohio. I enjoy programming in Python and JS frameworks like Svelte with Tailwind. Recently Ive been exploring Rust and have come to enjoy working with different technologies.<br>My current Projects include: Terrace Dashboard and numerous Python / Rust clients that integrate with it.
+Im Ryan, a software and web developer from Ohio. I enjoy programming in Python and JS frameworks like Svelte with Tailwind. Recently Ive been exploring Rust and have come to enjoy working with different technologies.<br>
 <br>
 <br>
 
