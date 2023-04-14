@@ -6,7 +6,7 @@ Im Ryan, a software and web developer from Ohio. I enjoy programming in Python a
 
 ## Dashboard: <img src="python.svg" title="Python"> <img src="fastapi.svg" title="FastAPI"> <img src="svelte.svg" title="Svelte"> <img src="tailwind.svg" title="Tailwind">
 
-A Dashboard/Homepage app that has some handy features like weather, time, bookmarks and available service communication protocol to interact standalone service clients
+A Dashboard/Homepage web application that has some handy features like weather, time, bookmarks, notes and available service communication protocol to interact with standalone service clients
 
 [<img alt="alt_text" width="400px" src="overview.gif" />](https://github.com/sockheadrps/Terrace-Dashboard)
 
