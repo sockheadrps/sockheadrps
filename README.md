@@ -12,7 +12,7 @@ A Dashboard/Homepage web application that has some handy features like weather, 
 
 ## Hardware Client <img src="rust.svg" title="Rust">
 
-A hardware client written purely in Rust that communicates hardware statistics about the host
+A hardware client written in Rust that communicates hardware statistics about the host
 
 [<img alt="alt_text" width="400px" src="preview.gif" />](https://github.com/sockheadrps/Hardware-Client)
 
