@@ -28,6 +28,10 @@ jobs:
           TOKEN: ${{ secrets.TOKEN }}
         run: python data_scrape.py
 
+      - name: Delete existing top_libs.png
+        run: |
+          rm -f top_libs.png  # Remove existing top_libs.png if it exists
+
       - name: Run data_gen.py
         env:
           TOKEN: ${{ secrets.TOKEN }}
