@@ -27,3 +27,16 @@ jobs:
         env:
           TOKEN: ${{ secrets.TOKEN }}
         run: python data_scrape.py
+
+      - name: commit files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A
+          git diff-index --quiet HEAD || (git commit -a -m "updated python data" --allow-empty)
+
+      - name: push changes
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.TOKEN }}
+          branch: main
