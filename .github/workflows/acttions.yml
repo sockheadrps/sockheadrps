@@ -25,5 +25,5 @@ jobs:
 
       - name: Run Python script
         env:
-          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+          TOKEN: ${{ secrets.TOKEN }}
         run: python data_scrape.py
