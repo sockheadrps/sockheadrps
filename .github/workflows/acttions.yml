@@ -30,7 +30,7 @@ jobs:
 
       - name: Delete existing top_libs.png
         run: |
-          rm -f top_libs.png  # Remove existing top_libs.png if it exists
+          rm -f top_libs.png 
 
       - name: Run data_gen.py
         env:
