@@ -40,15 +40,20 @@ plt.rcParams['text.color'] = 'black'        # Text color black
 bars = plt.bar(libraries, counts, color=colors)
 
 # Adding labels and title with bold text
-plt.xlabel('Libraries', color='black', fontweight='bold')   # Library names color and bold
-plt.ylabel('Frequency', color='black', fontweight='bold')   # Frequency labels color and bold
-plt.title('Top 15 Libraries Used (Excluding time and random)', color='black', fontweight='bold')
-plt.xticks(rotation=45, ha='right', color='black', fontweight='bold')  # X-axis ticks color and bold
+# Library names color and bold
+plt.xlabel('Libraries', color='black', fontweight='bold')
+# Frequency labels color and bold
+plt.ylabel('Frequency', color='black', fontweight='bold')
+plt.title('Top 15 Libraries Used', color='black', fontweight='bold')
+plt.xticks(rotation=45, ha='right', color='black',
+           fontweight='bold')  # X-axis ticks color and bold
 plt.yticks(color='black', fontweight='bold')  # Y-axis ticks color and bold
-plt.tight_layout(rect=[0, 0, 1, 1])  # Ensure tight layout with background color
+# Ensure tight layout with background color
+plt.tight_layout(rect=[0, 0, 1, 1])
 
 # Removing horizontal grid lines
-plt.grid(axis='y', linestyle='')  # Set linestyle to empty string to remove grid lines
+# Set linestyle to empty string to remove grid lines
+plt.grid(axis='y', linestyle='')
 
 # Customizing spines
 plt.gca().spines['top'].set_visible(False)
@@ -78,7 +83,7 @@ new_metrics_section = (
 )
 
 # Read existing README.md content
-with open(readme_file, 'r', encoding='utf-8') as f: 
+with open(readme_file, 'r', encoding='utf-8') as f:
     lines = f.readlines()
 # Check if Project Metrics section already exists
 found_metrics_section = False
