@@ -1,2 +1,4 @@
+matplotlib==3.8.1
+PyGithub==2.3.0
 PyGithub==2.3.0
 python-dotenv==1.0.1
