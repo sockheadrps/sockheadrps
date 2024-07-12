@@ -1,0 +1,588 @@
+[
+    {
+        "repo_name": "pygame-stream",
+        "python_files": [
+            "main.py",
+            "actors/actor.py",
+            "actors/npcActor.py",
+            "actors/npcHandler.py",
+            "actors/playerActor.py",
+            "attack/attack.py",
+            "attack/attackHandler.py",
+            "board/boardHandler.py",
+            "board/collisionDetection.py",
+            "events/eventHandler.py",
+            "stats/baseStat.py",
+            "stats/baseStatHandler.py",
+            "tests/__init__.py",
+            "tests/test_actors/__init__.py",
+            "tests/test_actors/test_actor.py"
+        ],
+        "libraries": [
+            "random",
+            "pytest",
+            "pygame"
+        ],
+        "total_python_lines": 580
+    },
+    {
+        "repo_name": "aggregate_top_40",
+        "python_files": [
+            "aggregate.py"
+        ],
+        "libraries": [
+            "requests",
+            "bs4"
+        ],
+        "total_python_lines": 37
+    },
+    {
+        "repo_name": "AiMouseMovement",
+        "python_files": [
+            "gan/gan.py",
+            "utils/graph.py",
+            "utils/mouse.py",
+            "utils/pullData.py"
+        ],
+        "libraries": [
+            "time",
+            "torch",
+            "json",
+            "pyautogui",
+            "pymongo",
+            "dotenv",
+            "os",
+            "matplotlib"
+        ],
+        "total_python_lines": 243
+    },
+    {
+        "repo_name": "AIODesa",
+        "python_files": [
+            "aiodesa/__init__.py",
+            "aiodesa/database.py",
+            "docs/conf.py",
+            "examples/aiohttp_server.py",
+            "tests/__init__.py",
+            "tests/test_Database.py",
+            "tests/test_table.py",
+            "tests/test_types.py",
+            "aiodesa/utils/table.py",
+            "aiodesa/utils/util_types.py"
+        ],
+        "libraries": [
+            "pytest",
+            "types",
+            "aiohttp",
+            "secrets",
+            "dataclasses",
+            "uuid",
+            "typing",
+            "enum",
+            "sys",
+            "builtins",
+            "aiosqlite",
+            "aiodesa",
+            "os",
+            "pathlib",
+            "asyncio"
+        ],
+        "total_python_lines": 1428
+    },
+    {
+        "repo_name": "BaxterAndFriends",
+        "python_files": [
+            "DopeWebSocketClient.py",
+            "WebSocketServer.py",
+            "app.py",
+            "baxter.py",
+            "chat.py",
+            "jsonifySettings.py",
+            "scheduler.py",
+            "sockbot.py",
+            "some_dope_webserver.py",
+            "testapp.py",
+            "testapp2.py",
+            "tesyu1.py",
+            "WebSocketServer/WebSocketServer.py"
+        ],
+        "libraries": [
+            "hug",
+            "importlib",
+            "requests",
+            "socket",
+            "fastapi",
+            "falcon",
+            "typing",
+            "jsonifySettings",
+            "datetime",
+            "threading",
+            "urllib",
+            "selenium",
+            "scheduler",
+            "asyncio",
+            "tkinter",
+            "pickle",
+            "time",
+            "websockets",
+            "speech_recognition",
+            "difflib",
+            "songRequests",
+            "gtts",
+            "playsound",
+            "json",
+            "timer",
+            "re",
+            "random",
+            "os"
+        ],
+        "total_python_lines": 1549
+    },
+    {
+        "repo_name": "BrowserSources",
+        "python_files": [],
+        "libraries": [],
+        "total_python_lines": 0
+    },
+    {
+        "repo_name": "CheatSheet",
+        "python_files": [],
+        "libraries": [],
+        "total_python_lines": 0
+    },
+    {
+        "repo_name": "CSS",
+        "python_files": [],
+        "libraries": [],
+        "total_python_lines": 0
+    },
+    {
+        "repo_name": "CSS-Gradient-Generator",
+        "python_files": [],
+        "libraries": [],
+        "total_python_lines": 0
+    },
+    {
+        "repo_name": "DigiDeck",
+        "python_files": [
+            "DigiDeck/htmlGenerator.py",
+            "DigiDeck/ipFinder.py",
+            "DigiDeck/serverGenerator.py"
+        ],
+        "libraries": [
+            "yattag",
+            "socket",
+            "os"
+        ],
+        "total_python_lines": 121
+    },
+    {
+        "repo_name": "EventBot",
+        "python_files": [
+            "bot.py",
+            "main.py",
+            "settings.py",
+            "cogs/events.py",
+            "cogs/sync.py",
+            "hooks/fetch_roles.py",
+            "cogs/unfinished/server.py",
+            "cogs/utils/utils.py"
+        ],
+        "libraries": [
+            "logging",
+            "time",
+            "settings",
+            "discord",
+            "aiohttp",
+            "datetime",
+            "dataclasses",
+            "typing",
+            "bot",
+            "random",
+            "uuid",
+            "os",
+            "asyncio"
+        ],
+        "total_python_lines": 745
+    },
+    {
+        "repo_name": "Flash-Cards",
+        "python_files": [],
+        "libraries": [],
+        "total_python_lines": 0
+    },
+    {
+        "repo_name": "Hardware-Client",
+        "python_files": [],
+        "libraries": [],
+        "total_python_lines": 0
+    },
+    {
+        "repo_name": "HTML",
+        "python_files": [],
+        "libraries": [],
+        "total_python_lines": 0
+    },
+    {
+        "repo_name": "Led-compare-graph",
+        "python_files": [],
+        "libraries": [],
+        "total_python_lines": 0
+    },
+    {
+        "repo_name": "LED-Stats",
+        "python_files": [],
+        "libraries": [],
+        "total_python_lines": 0
+    },
+    {
+        "repo_name": "lnd-temp",
+        "python_files": [
+            "main.py"
+        ],
+        "libraries": [
+            "uvicorn",
+            "fastapi"
+        ],
+        "total_python_lines": 86
+    },
+    {
+        "repo_name": "Noter",
+        "python_files": [
+            "functionsSQL.py",
+            "main.py",
+            "test.py"
+        ],
+        "libraries": [
+            "json",
+            "uvicorn",
+            "fastapi",
+            "pydantic",
+            "sqlite3",
+            "functionsSQL",
+            "random"
+        ],
+        "total_python_lines": 262
+    },
+    {
+        "repo_name": "Population-Density-test",
+        "python_files": [],
+        "libraries": [],
+        "total_python_lines": 0
+    },
+    {
+        "repo_name": "Pure-CSS-Images",
+        "python_files": [],
+        "libraries": [],
+        "total_python_lines": 0
+    },
+    {
+        "repo_name": "PyGameAI",
+        "python_files": [
+            "OIG.py",
+            "config.py",
+            "game.py",
+            "game_state.py",
+            "items.py",
+            "main.py",
+            "p4-game-learn.py",
+            "player.py",
+            "richer.py",
+            "robot.py"
+        ],
+        "libraries": [
+            "game_state",
+            "items",
+            "config",
+            "math",
+            "stable_baselines3",
+            "player",
+            "enum",
+            "numpy",
+            "robot",
+            "time",
+            "random",
+            "game",
+            "pygame",
+            "richer",
+            "gym",
+            "os",
+            "OIG"
+        ],
+        "total_python_lines": 551
+    },
+    {
+        "repo_name": "RocketPID",
+        "python_files": [],
+        "libraries": [],
+        "total_python_lines": 0
+    },
+    {
+        "repo_name": "ServerStats",
+        "python_files": [
+            "main.py",
+            "tests/__init__.py",
+            "tests/test_connection_manager.py",
+            "tests/test_main.py",
+            "tests/test_stats.py",
+            "utilities/connection_manager.py",
+            "utilities/stats.py"
+        ],
+        "libraries": [
+            "logging",
+            "pytest",
+            "psutil",
+            "json",
+            "fastapi",
+            "uvicorn",
+            "httpx",
+            "typing",
+            "main",
+            "utilities"
+        ],
+        "total_python_lines": 392
+    },
+    {
+        "repo_name": "sockheadrps",
+        "python_files": [
+            "data_scrape.py",
+            "htmlbuilder.py"
+        ],
+        "libraries": [
+            "re",
+            "github",
+            "dotenv",
+            "os",
+            "json"
+        ],
+        "total_python_lines": 83
+    },
+    {
+        "repo_name": "SoundClient",
+        "python_files": [
+            "LocalClient/main.py",
+            "LocalClient/sound.py",
+            "LocalClient/utils/playlist.py"
+        ],
+        "libraries": [
+            "sound",
+            "fastapi",
+            "typing",
+            "sqlalchemy",
+            "signal",
+            "threading",
+            "asyncio",
+            "time",
+            "contextlib",
+            "queue",
+            "json",
+            "uvicorn",
+            "pygame",
+            "sqlalchemy_utils",
+            "dotenv",
+            "os",
+            "pathlib",
+            "eyed3"
+        ],
+        "total_python_lines": 457
+    },
+    {
+        "repo_name": "StreamerSoundBoard",
+        "python_files": [
+            "main/ConnectionManager.py",
+            "main/Models.py",
+            "main/__init__.py",
+            "main/auth.py",
+            "main/server.py",
+            "main/tests/__init__.py",
+            "main/tests/test_models.py",
+            "main/tests/test_server.py"
+        ],
+        "libraries": [
+            "auth",
+            "pytest",
+            "httpx",
+            "fastapi",
+            "uvicorn",
+            "typing",
+            "pydantic",
+            "asyncio",
+            "mongoengine",
+            "jwt",
+            "datetime",
+            "uuid"
+        ],
+        "total_python_lines": 429
+    },
+    {
+        "repo_name": "TabletDashboard",
+        "python_files": [
+            "fserver.py"
+        ],
+        "libraries": [
+            "comtypes",
+            "ctypes",
+            "json",
+            "subprocess",
+            "webbrowser",
+            "pyautogui",
+            "re",
+            "urllib",
+            "flask"
+        ],
+        "total_python_lines": 91
+    },
+    {
+        "repo_name": "Terrace-Dashboard",
+        "python_files": [
+            "clients/example_service.py",
+            "clients/hardware_client.py",
+            "clients/stats.py",
+            "server/handlers.py",
+            "server/main.py",
+            "server/tests/__init__.py",
+            "server/tests/test_main.py",
+            "server/tests/test_utilities/__init__.py",
+            "server/tests/test_utilities/test_handlers.py",
+            "server/tests/test_utilities/test_stats.py"
+        ],
+        "libraries": [
+            "logging",
+            "psutil",
+            "httpx",
+            "fastapi",
+            "typing",
+            "handlers",
+            "argparse",
+            "itertools",
+            "asyncio",
+            "stats",
+            "time",
+            "pytest",
+            "websockets",
+            "json",
+            "uvicorn",
+            "os"
+        ],
+        "total_python_lines": 1081
+    },
+    {
+        "repo_name": "test_chart",
+        "python_files": [],
+        "libraries": [],
+        "total_python_lines": 0
+    },
+    {
+        "repo_name": "Time-lapse-images",
+        "python_files": [
+            "TimeLapse.py"
+        ],
+        "libraries": [
+            "time",
+            "os",
+            "cv2",
+            "schedule"
+        ],
+        "total_python_lines": 36
+    },
+    {
+        "repo_name": "TrumpTweets",
+        "python_files": [
+            "TTGit/theDonNLTK.py",
+            "TTGit/vrbnTT.py"
+        ],
+        "libraries": [
+            "tweepy",
+            "json",
+            "collections",
+            "numpy",
+            "unidecode",
+            "os",
+            "nltk",
+            "matplotlib"
+        ],
+        "total_python_lines": 109
+    },
+    {
+        "repo_name": "TTBot",
+        "python_files": [
+            "bot.py"
+        ],
+        "libraries": [
+            "time",
+            "threading",
+            "pyautogui",
+            "random",
+            "socket",
+            "os",
+            "selenium"
+        ],
+        "total_python_lines": 340
+    },
+    {
+        "repo_name": "TwitchBot",
+        "python_files": [
+            "TwitchBot/__init__.py",
+            "TwitchBot/__main__.py",
+            "browser/resizer.py",
+            "TwitchBot/bot/__init__.py",
+            "TwitchBot/bot/bot.py",
+            "TwitchBot/db/__init__.py",
+            "TwitchBot/db/db.py",
+            "TwitchBot/bot/cogs/database.py",
+            "TwitchBot/bot/cogs/onMessage.py",
+            "TwitchBot/bot/cogs/tts_server.py",
+            "TwitchBot/bot/cogs/user_commands.py",
+            "TwitchBot/db/schemas/__init__.py",
+            "TwitchBot/db/schemas/schemas.py",
+            "TwitchBot/bot/cogs/incomplete/enconomy.py",
+            "TwitchBot/bot/cogs/incomplete/ws.py",
+            "TwitchBot/bot/cogs/models/models.py"
+        ],
+        "libraries": [
+            "db",
+            "dataclasses",
+            "collections",
+            "typing",
+            "PIL",
+            "pydantic",
+            "aiosqlite",
+            "asyncio",
+            "time",
+            "websockets",
+            "twitchio",
+            "playsound",
+            "gtts",
+            "json",
+            "re",
+            "bot",
+            "aiodesa",
+            "os",
+            "pathlib"
+        ],
+        "total_python_lines": 671
+    },
+    {
+        "repo_name": "TwitWords",
+        "python_files": [
+            "hello.py"
+        ],
+        "libraries": [
+            "tweepy",
+            "dash_core_components",
+            "dash_html_components",
+            "dash",
+            "json",
+            "collections",
+            "numpy",
+            "os"
+        ],
+        "total_python_lines": 109
+    },
+    {
+        "repo_name": "TwitWords2",
+        "python_files": [],
+        "libraries": [],
+        "total_python_lines": 0
+    }
+]
