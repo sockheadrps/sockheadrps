@@ -48,6 +48,13 @@ A Dashboard/Homepage web application that has some handy features like weather, 
 
 # 📊 Python Stats:
 
-<iframe src="https://sockheadrps.github.io/sockheadrps/index.html" frameborder="0" scrolling="no" width="100%" height="300px"></iframe>
+### Data last generated on: 2024-07-12
 
-[![](https://visitcount.itsvg.in/api?id=sockheadrps&icon=0&color=0)](https://visitcount.itsvg.in)
+## Top Libraries Used
+
+![](top_libs.png)
+
+## Project Metrics
+
+- Total Lines of Python Code: 9400
+- Total Libraries/Modules Imported: 104
