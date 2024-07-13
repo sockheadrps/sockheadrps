@@ -19,6 +19,7 @@ def count_lines(content):
 
 # Function to find Python libraries in a file content
 def find_python_libraries(content):
+    importless_streak = 0
     libraries = set()
     import_patterns = [r"^import\s+(\w+)", r"^from\s+(\w+)\s+import"]
     for line in content.splitlines():
@@ -26,6 +27,12 @@ def find_python_libraries(content):
             match = re.match(pattern, line)
             if match:
                 libraries.add(match.group(1))
+                importless_streak = 0
+            else:
+                importless_streak += 1
+        # Break if there are more than 10 lines without imports in a row
+        if importless_streak > 10:
+            break  
     return libraries
 
 
