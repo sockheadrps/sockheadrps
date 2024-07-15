@@ -26,6 +26,8 @@ jobs:
       - name: Run data_scrape.py
         env:
           TOKEN: ${{ secrets.TOKEN }}
+          TODAY: ${{ steps.date.outputs.date }}
+          GITHUB_RUN_ID: ${{ github.run_id }}
         run: python data_scrape.py
 
       - name: Gather Merged PRs
