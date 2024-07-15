@@ -32,9 +32,9 @@ A Dashboard/Homepage web application that has some handy features like weather, 
 ---
 
 
-### Data last generated on: 2024-07-15 via [GitHub Action 9935198880](https://github.com/sockheadrps/sockheadrps/actions/runs/9935198880)
+### Data last generated on: 2024-07-15 via [GitHub Action 9935610679](https://github.com/sockheadrps/sockheadrps/actions/runs/9935610679)
 
-  ## Recently Merged Pull Requests
+  # 🔀 Recently Merged Pull Requests
 
 - **[Sounds.ext fixes](https://github.com/PythonistaGuild/TwitchIO/pull/454)**
   - Repository: [TwitchIO](https://github.com/PythonistaGuild/TwitchIO)
@@ -51,7 +51,7 @@ A Dashboard/Homepage web application that has some handy features like weather, 
 
 # 📊 Python Stats:
 
-### Total Lines of Python Code: 9409
+### Total Lines of Python Code: 9408
 ### Total Libraries/Modules Imported: 98
 
 ![](data.gif)
