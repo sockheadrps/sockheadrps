@@ -42,7 +42,8 @@ with open("repo_data.json", "r") as json_file:
 library_counts = Counter()
 excluded_libraries = ["time", "random"]
 
-total_lines_of_code = sum(repo["total_python_lines"] for repo in repo_data["repo_stats"])
+total_lines_of_code = sum(repo["total_python_lines"]
+                          for repo in repo_data["repo_stats"])
 libraries_used = set()
 
 for repo in repo_data["repo_stats"]:
@@ -104,18 +105,21 @@ fig.update_layout(
 fig.write_image("top_libraries.png")
 
 # Sort repositories by total lines of code in descending order
-sorted_repos = sorted(repo_data["repo_stats"], key=lambda x: x["total_python_lines"], reverse=True)
+sorted_repos = sorted(
+    repo_data["repo_stats"], key=lambda x: x["total_python_lines"], reverse=True)
 
 # Extract repository names and total lines of code for the top 7 repositories
 top_repos = sorted_repos[:7]
 repo_names = [repo["repo_name"] for repo in top_repos]
 lines_of_code = [repo["total_python_lines"] for repo in top_repos]
-df = pd.DataFrame({"Repository Name": repo_names, "Lines of Code": lines_of_code})
+df = pd.DataFrame({"Repository Name": repo_names,
+                  "Lines of Code": lines_of_code})
 
 # Line chart of the top 7 repositories by lines of code
 fig = px.line(df, x="Repository Name", y="Lines of Code", text="Lines of Code")
 
-fig.update_traces(line=dict(width=7), marker=dict(size=20), texttemplate="%{text}", textposition="bottom center")
+fig.update_traces(line=dict(width=7), marker=dict(size=20),
+                  texttemplate="%{text}", textposition="bottom center")
 
 fig.update_layout(
     title="Top Repositories by Number of Lines of Python Code",
@@ -154,12 +158,9 @@ new_metrics_section = [
     f"### Data last generated on: {timestamp} via github actions\n\n",
     f"  {recent_prs_section}\n",
     f"# 📊 Python Stats:\n\n",
-    f"## Project Metrics\n\n",
-    f"- Total Lines of Python Code: {total_lines_of_code}\n",
-    f"- Total Libraries/Modules Imported: {total_libraries_used}\n" f"## Largest Python Projects by lines of code\n\n",
-    f"![](top_lines.png)\n\n",
-    f"## Top Libraries Used\n\n",
-    f"![](top_libraries.png)\n\n",
+    f"### Total Lines of Python Code: {total_lines_of_code}\n",
+    f"### Total Libraries/Modules Imported: {total_libraries_used}\n\n",
+    f"![](data.gif)\n\n",
 ]
 
 with open(readme_file, "r", encoding="utf-8") as f:
