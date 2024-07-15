@@ -2,7 +2,7 @@ import imageio
 from PIL import Image
 
 # Paths to your PNG images
-image_paths = ['top_lines.png', 'top_libraries.png']
+image_paths = ['top_lines.png', 'top_libraries.png', "construct_counts.png"]
 
 # Duration each image should be shown in seconds
 duration_per_frame = 5000

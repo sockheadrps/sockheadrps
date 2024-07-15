@@ -28,11 +28,6 @@ jobs:
           TOKEN: ${{ secrets.TOKEN }}
         run: python data_scrape.py
 
-      - name: Delete existing data images
-        run: |
-          rm -f top_lines.png 
-          rm -f top_libraries.png 
-
       - name: Gather Merged PRs
         run: python mergedprs.py
 
@@ -44,6 +39,19 @@ jobs:
       - name: Generate data gifs
         run: |
           python gifmaker.py
+      
+      - name: Delete data images used for gif
+        run: |
+          rm -f top_lines.png 
+          rm -f top_libraries.png 
+          rm -f construct_counts.png
+      
+      - name: Update README.md with generated date
+        run: |
+          TODAY=$(date +'%Y-%m-%d')
+          sed -i "s/{GENERATED_DATE}/$TODAY/g" README.md
+        env:
+          TODAY: ${{ steps.date.outputs.date }}
 
       - name: Commit files
         run: |

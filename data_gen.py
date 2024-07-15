@@ -136,6 +136,46 @@ fig.update_layout(
 fig.write_image("top_lines.png")
 
 
+construct_count = repo_data["construct_count"]
+
+df = pd.DataFrame(list(construct_count.items()), columns=['Construct', 'Count'])
+
+df = df.sort_values(by='Count', ascending=False).head(15)
+
+colors = [
+    "#ff6f61", "#a4e4b1", "#ffb347", "#4ecdc4", "#d1ccc0",
+    "#ff6b6b", "#6ab04c", "#d6a2e8", "#ff9ff3", "#7bed9f",
+    "#feca57", "#1abc9c", "#ff6348", "#686de0", "#ff4757"
+]
+
+
+fig = go.Figure(
+    data=[
+        go.Bar(
+            x=df['Construct'],
+            y=df['Count'],
+            text=df['Count'],
+            textposition="auto",
+            marker_color=colors[:len(df)],
+            textfont=dict(size=14, weight="bold"),
+        )
+    ]
+)
+
+fig.update_layout(
+    title="Python Construct Counts",
+    yaxis_title="Count",
+    xaxis_tickangle=-45,
+    font=dict(family="Arial, sans-serif", size=14, color="rgb(255, 255, 255)"),
+    plot_bgcolor="#22272E",
+    paper_bgcolor="#22272E",
+    margin=dict(l=40, r=40, t=60, b=100),
+    yaxis=dict(showticklabels=False, ticks="", showgrid=False, zeroline=False),
+
+)
+
+fig.write_image("construct_counts.png")
+
 def format_pr_info(prs):
     formatted_info = []
     for pr in prs:
@@ -155,7 +195,7 @@ recent_prs_section = f"## Recently Merged Pull Requests\n\n" f'{format_pr_info(r
 
 new_metrics_section = [
     f"\n\n",
-    f"### Data last generated on: {timestamp} via github actions\n\n",
+    f"### Data last generated on: {GENERATED_DATE} via GitHub Actions\n\n",
     f"  {recent_prs_section}\n",
     f"# 📊 Python Stats:\n\n",
     f"### Total Lines of Python Code: {total_lines_of_code}\n",
