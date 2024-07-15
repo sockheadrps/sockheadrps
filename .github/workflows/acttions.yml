@@ -41,6 +41,10 @@ jobs:
           TOKEN: ${{ secrets.TOKEN }}
         run: python data_gen.py
 
+      - name: Generate data gifs
+        run: |
+          python gifmaker.py
+
       - name: Commit files
         run: |
           git config --local user.email "action@github.com"
