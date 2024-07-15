@@ -48,15 +48,6 @@ jobs:
           rm -f top_libraries.png 
           rm -f construct_counts.png
       
-      - name: Update README.md with generated date and run id
-        run: |
-          TODAY=$(date +'%Y-%m-%d')
-          sed -i "s/{GENERATED_DATE}/$TODAY/g" README.md
-          sed -i "s/{GITHUB_RUN_ID}/$GITHUB_RUN_ID/g" README.md
-        env:
-          TODAY: ${{ steps.date.outputs.date }}
-          GITHUB_RUN_ID: ${{ github.run_id }}
-
       - name: Commit files
         run: |
           git config --local user.email "action@github.com"

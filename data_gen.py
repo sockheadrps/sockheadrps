@@ -5,9 +5,14 @@ from datetime import datetime
 import plotly.graph_objects as go
 import plotly.express as px
 import pandas as pd
+from dotenv import load_dotenv
+import os
 
 import re
 
+load_dotenv()
+TODAY = os.getenv("TODAY")
+GITHUB_RUN_ID = os.getenv("GITHUB_RUN_ID")
 
 def count_lines(content):
     return len(content.splitlines())
