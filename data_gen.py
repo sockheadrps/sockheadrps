@@ -200,7 +200,8 @@ recent_prs_section = f"## Recently Merged Pull Requests\n\n" f'{format_pr_info(r
 
 new_metrics_section = [
     f"\n\n",
-    f"### Data last generated on: {TODAY} via GitHub Action: {GITHUB_RUN_ID} \n\n",
+    f"### Data last generated on: {timestamp} via [GitHub Action {GITHUB_RUN_ID}](https://github.com/sockheadrps/sockheadrps/actions/runs/{GITHUB_RUN_ID})\n\n"
+
     f"  {recent_prs_section}\n",
     f"# 📊 Python Stats:\n\n",
     f"### Total Lines of Python Code: {total_lines_of_code}\n",
