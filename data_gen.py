@@ -196,12 +196,11 @@ def format_pr_info(prs):
 # Update README.md with new metrics section
 readme_file = "README.md"
 timestamp = datetime.now().strftime("%Y-%m-%d")
-recent_prs_section = f"## Recently Merged Pull Requests\n\n" f'{format_pr_info(repo_data["merged_prs"][:3])}\n'
+recent_prs_section = f"# 🔀 Recently Merged Pull Requests\n\n{format_pr_info(repo_data['merged_prs'][:3])}\n"
 
 new_metrics_section = [
     f"\n\n",
     f"### Data last generated on: {timestamp} via [GitHub Action {GITHUB_RUN_ID}](https://github.com/sockheadrps/sockheadrps/actions/runs/{GITHUB_RUN_ID})\n\n"
-
     f"  {recent_prs_section}\n",
     f"# 📊 Python Stats:\n\n",
     f"### Total Lines of Python Code: {total_lines_of_code}\n",
