@@ -53,7 +53,7 @@ A Dashboard/Homepage web application that has some handy features like weather, 
 
 ## Project Metrics
 
-- Total Lines of Python Code: 9305
+- Total Lines of Python Code: 9317
 - Total Libraries/Modules Imported: 97
 ## Largest Python Projects by lines of code
 
