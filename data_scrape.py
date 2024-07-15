@@ -32,16 +32,23 @@ def find_python_libraries(content):
                 importless_streak += 1
         # Break if there are more than 10 lines without imports in a row
         if importless_streak > 10:
-            break  
+            break
     return libraries
 
 
-repo_data = []
+# Initialize repo_data JSON structure
+repo_data = {"repo_stats": []}
 
 for repo in user.get_repos():
     # Only process repositories that are not forks
     if not repo.fork:
-        repo_info = {"repo_name": repo.name, "python_files": [], "libraries": set(), "total_python_lines": 0}
+        repo_info = {
+            "repo_name": repo.name,
+            "python_files": [],
+            "libraries": set(),
+            "total_python_lines": 0,
+            "file_extensions": {},
+        }
 
         contents = repo.get_contents("")
 
@@ -52,6 +59,12 @@ for repo in user.get_repos():
                 contents.extend(repo.get_contents(file_content.path))
             else:
                 file_extension = os.path.splitext(file_content.path)[1]
+
+                # Update file extension count
+                if file_extension in repo_info["file_extensions"]:
+                    repo_info["file_extensions"][file_extension] += 1
+                else:
+                    repo_info["file_extensions"][file_extension] = 1
 
                 # Only process .py files
                 if file_extension == ".py":
@@ -72,7 +85,8 @@ for repo in user.get_repos():
         # Convert libraries set to list for JSON serialization
         repo_info["libraries"] = list(repo_info["libraries"])
 
-        repo_data.append(repo_info)
+        # Append repo_info to repo_stats
+        repo_data["repo_stats"].append(repo_info)
 
 # Save the data as JSON
 with open("repo_data.json", "w") as json_file:

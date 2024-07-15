@@ -28,9 +28,13 @@ jobs:
           TOKEN: ${{ secrets.TOKEN }}
         run: python data_scrape.py
 
-      - name: Delete existing top_libs.png
+      - name: Delete existing data images
         run: |
-          rm -f top_libs.png 
+          rm -f top_lines.png 
+          rm -f top_libraries.png 
+
+      - name: Gather Merged PRs
+        run: python mergedprs.py
 
       - name: Run data_gen.py
         env:
