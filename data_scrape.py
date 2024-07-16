@@ -61,20 +61,22 @@ repo_data = {"repo_stats": []}
 for repo in user.get_repos():
     # Only process repositories that are not forks
     if not repo.fork:
+        print(f"Processing {repo.name}...")
         repo_info = {
             "repo_name": repo.name,
             "python_files": [],
             "libraries": set(),
             "total_python_lines": 0,
             "file_extensions": {},
+            "total_commits": 0,
         }
 
         contents = repo.get_contents("")
 
         while contents:
-            
+            commits = repo.get_commits()
+            repo_info["total_commits"] = commits.totalCount
             file_content = contents.pop(0)
-
             if file_content.type == "dir":
                 contents.extend(repo.get_contents(file_content.path))
             else:

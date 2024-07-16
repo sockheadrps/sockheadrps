@@ -55,4 +55,3 @@ A Dashboard/Homepage web application that has some handy features like weather, 
 ### Total Libraries/Modules Imported: 98
 
 ![](data.gif)
-

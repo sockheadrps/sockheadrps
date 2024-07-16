@@ -14,33 +14,9 @@ load_dotenv()
 TODAY = os.getenv("TODAY")
 GITHUB_RUN_ID = os.getenv("GITHUB_RUN_ID")
 
-def count_lines(content):
-    return len(content.splitlines())
 
-
-def find_python_libraries(content):
-    importless_streak = 0
-    libraries = set()
-    import_patterns = [r"^import\s+(\w+)", r"^from\s+(\w+)\s+import"]
-    for line in content.splitlines():
-        for pattern in import_patterns:
-            match = re.match(pattern, line)
-            if match:
-                libraries.add(match.group(1))
-                importless_streak = 0
-            else:
-                importless_streak += 1
-        # Break if there are more than 10 lines without imports in a row
-        if importless_streak > 10:
-            break
-    return libraries
-
-
-# Initialize repo_data as a dictionary with "repo_stats" as a list
 repo_data = {"repo_stats": []}
 
-
-# Save repo_data as JSON
 with open("repo_data.json", "r") as json_file:
     repo_data = json.load(json_file)
 
@@ -107,38 +83,60 @@ fig.update_layout(
     yaxis=dict(showticklabels=False, ticks="", showgrid=False, zeroline=False),
 )
 
-fig.write_image("top_libraries.png")
+fig.write_image("top_libraries.png", width=1200, height=800)
 
 # Sort repositories by total lines of code in descending order
 sorted_repos = sorted(
     repo_data["repo_stats"], key=lambda x: x["total_python_lines"], reverse=True)
 
-# Extract repository names and total lines of code for the top 7 repositories
+
+# Extract repository names, total lines of code, and total PRs for the top 7 repositories
 top_repos = sorted_repos[:7]
 repo_names = [repo["repo_name"] for repo in top_repos]
 lines_of_code = [repo["total_python_lines"] for repo in top_repos]
-df = pd.DataFrame({"Repository Name": repo_names,
-                  "Lines of Code": lines_of_code})
+total_commits = [repo["total_commits"]
+    for repo in top_repos]
 
-# Line chart of the top 7 repositories by lines of code
-fig = px.line(df, x="Repository Name", y="Lines of Code", text="Lines of Code")
+df = pd.DataFrame({
+    "Repository Name": repo_names,
+    "Lines of Python Code": lines_of_code,
+    "Total Commits": total_commits
+})
 
-fig.update_traces(line=dict(width=7), marker=dict(size=20),
-                  texttemplate="%{text}", textposition="bottom center")
+# Line chart of the top 7 repositories by lines of code and total PRs
+fig = px.scatter(df, x="Repository Name", y="Lines of Python Code", size="Total Commits", color="Total Commits", text="Lines of Python Code", color_continuous_scale=px.colors.sequential.Viridis,)
 
-fig.update_layout(
-    title="Top Repositories by Number of Lines of Python Code",
-    xaxis_title="Repository Name",
-    yaxis_title="Lines of Code",
-    font=dict(family="Arial, sans-serif", size=14, color="rgb(255, 255, 255)"),
-    xaxis=dict(showgrid=False, tickangle=-45),
-    yaxis=dict(showgrid=False, showticklabels=False),
-    plot_bgcolor="#22272E",
-    paper_bgcolor="#22272E",
-    margin=dict(l=40, r=40, t=60, b=100),
+fig.update_traces(
+    line=dict(width=7),
+    marker=dict(size=df["Total Commits"] * 10),
+    texttemplate="%{x} <br> Lines of Code: %{y}<br>Total Commits: %{text}",
+    text=[f"{size//10}" for size in df["Total Commits"] * 10],
+    textposition="bottom center",
 )
 
-fig.write_image("top_lines.png")
+fig.update_layout(
+    title="Repos by Lines of Python Code and Total Commits",
+    font=dict(family="Arial, sans-serif", size=14, color="rgb(255, 255, 255)"),
+    xaxis=dict(
+        showgrid=False, 
+        showticklabels=False,
+        
+    ),
+    yaxis=dict(
+        showgrid=False, 
+        showticklabels=False, 
+        zeroline=False,
+        visible=False,
+        showline = False,     
+        range=[0, df["Lines of Python Code"].max() + 100]
+    ),
+    yaxis_title=None,
+    xaxis_title=None, 
+    plot_bgcolor="#22272E",
+    paper_bgcolor="#22272E",
+    margin=dict(l=40, r=40, t=60, b=0),
+)
+fig.write_image("top_lines.png", width=1200, height=800) 
 
 
 construct_count = repo_data["construct_count"]
@@ -179,7 +177,7 @@ fig.update_layout(
 
 )
 
-fig.write_image("construct_counts.png")
+fig.write_image("construct_counts.png", width=1200, height=800)
 
 def format_pr_info(prs):
     formatted_info = []
