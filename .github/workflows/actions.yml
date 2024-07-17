@@ -30,7 +30,7 @@ jobs:
         run: python Generator/utils/data_scrape.py
 
       - name: Gather Merged PRs
-        run: python mergedprs.py
+        run: python Generator/utils/mergedprs.py
 
       - name: Generate Graphs
         run: |
