@@ -1,4 +1,4 @@
-name: Run Python Scripts For JSON Data
+name: Run Python Scripts For Data Gathering and Generation
 
 on:
   push:
@@ -32,21 +32,22 @@ jobs:
       - name: Gather Merged PRs
         run: python mergedprs.py
 
-      - name: Run data_gen.py
+      - name: Generate Graphs
+        run: |
+          python Generator/utils/construct_counts_graph.py
+          python Generator/utils/line_prs_graph.py
+          python Generator/utils/lines_graph.py
+          python Generator/utils/top_libraries_graph.py
+
+      - name: Generate data gif
+        run: |
+          python Generator/utils/gifmaker.py
+
+      - name: Adjust Readme
         env:
           TOKEN: ${{ secrets.TOKEN }}
-        run: python data_gen.py
+        run: python Generator/readme.py
 
-      - name: Generate data gifs
-        run: |
-          python gifmaker.py
-      
-      - name: Delete data images used for gif
-        run: |
-          rm -f top_lines.png 
-          rm -f top_libraries.png 
-          rm -f construct_counts.png
-      
       - name: Commit files
         run: |
           git config --local user.email "action@github.com"

@@ -51,8 +51,11 @@ A Dashboard/Homepage web application that has some handy features like weather, 
 
 # 📊 Python Stats:
 
+### Total Lines of Python Code: 9558
+### Total Libraries/Modules Imported: 100
 ### Total Lines of Python Code: 9417
 ### Total Libraries/Modules Imported: 98
 
 ![](data.gif)
+
 

@@ -17,14 +17,17 @@ user = g.get_user()
 def count_lines(content):
     return len(content.splitlines())
 
+
 counts = {
-    'if statements': 0,
-    'while loops': 0,
-    'for loops': 0,
-    'functions created': 0,
-    'async functions created': 0,
-    'classes created': 0
+    "if statements": 0,
+    "while loops": 0,
+    "for loops": 0,
+    "functions created": 0,
+    "async functions created": 0,
+    "classes created": 0,
 }
+
+
 # Function to find Python libraries in a file content
 def count_python_constructs(content):
     global counts
@@ -44,14 +47,14 @@ def count_python_constructs(content):
             # Break if there are more than 10 lines without imports in a row
             if importless_streak > 10:
                 check_imports = False
-        
-        counts['if statements'] += len(re.findall(r'\bif\b', line))
-        counts['while loops'] += len(re.findall(r'\bwhile\b', line))
-        counts['for loops'] += len(re.findall(r'\bfor\b', line))
-        counts['functions created'] += len(re.findall(r'\bdef\b', line))
-        counts['async functions created'] += len(re.findall(r'\basync\s+def\b', line))
-        counts['classes created'] += len(re.findall(r'\bclass\b', line))
-        
+
+        counts["if statements"] += len(re.findall(r"\bif\b", line))
+        counts["while loops"] += len(re.findall(r"\bwhile\b", line))
+        counts["for loops"] += len(re.findall(r"\bfor\b", line))
+        counts["functions created"] += len(re.findall(r"\bdef\b", line))
+        counts["async functions created"] += len(re.findall(r"\basync\s+def\b", line))
+        counts["classes created"] += len(re.findall(r"\bclass\b", line))
+
     return libraries, counts
 
 
