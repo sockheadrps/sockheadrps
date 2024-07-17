@@ -8,6 +8,7 @@ config = configparser.ConfigParser()
 config.read("config.ini")
 
 GENERATE = config.getboolean("Settings", "generate_libs_used_bar_chart")
+EXCLUDED_LIBS = config.get("ExcludedLibs", "excluded_libraries")
 
 # Load repo data from JSON
 with open("repo_data.json", "r") as json_file:
@@ -15,11 +16,10 @@ with open("repo_data.json", "r") as json_file:
 
 # Count libraries used
 library_counts = Counter()
-excluded_libraries = ["time", "random"]
 
 for repo in repo_data["repo_stats"]:
     for library in repo["libraries"]:
-        if library not in excluded_libraries:
+        if library not in EXCLUDED_LIBS:
             library_counts[library] += 1
 
 # Get top 15 libraries
