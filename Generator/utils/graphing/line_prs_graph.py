@@ -7,7 +7,7 @@ import configparser
 config = configparser.ConfigParser()
 config.read("config.ini")
 
-GENERATE = config.getboolean("Settings", "generate_lines_of_code_pr_scatter")
+GENERATE = config.getboolean("Settings", "generate_lines_of_code_pr_scatter_chart")
 
 with open("repo_data.json", "r") as json_file:
     repo_data = json.load(json_file)
