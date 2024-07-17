@@ -32,7 +32,7 @@ A Dashboard/Homepage web application that has some handy features like weather, 
 ---
 
 
-### Data last generated on: 2024-07-16 via [GitHub Action 9952520599](https://github.com/sockheadrps/sockheadrps/actions/runs/9952520599)
+### Data last generated on: 2024-07-17 via [GitHub Action 9973835931](https://github.com/sockheadrps/sockheadrps/actions/runs/9973835931)
 
   # 🔀 Recently Merged Pull Requests
 
@@ -48,14 +48,9 @@ A Dashboard/Homepage web application that has some handy features like weather, 
   - Repository: [Keystroke-Display](https://github.com/Beaux44/Keystroke-Display)
   - Stars: 13
 
-
 # 📊 Python Stats:
 
-### Total Lines of Python Code: 9558
-### Total Libraries/Modules Imported: 100
-### Total Lines of Python Code: 9417
-### Total Libraries/Modules Imported: 98
-
-![](data.gif)
-
+### Total Lines of Python Code: 9683
+### Total Libraries/Modules Imported: 99
+![](DataVisuals/data.gif)
 
