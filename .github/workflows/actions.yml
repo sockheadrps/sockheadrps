@@ -34,10 +34,10 @@ jobs:
 
       - name: Generate Graphs
         run: |
-          python Generator/utils/construct_counts_graph.py
-          python Generator/utils/line_prs_graph.py
-          python Generator/utils/lines_graph.py
-          python Generator/utils/top_libraries_graph.py
+          python Generator/utils/graphing/construct_counts_graph.py
+          python Generator/utils/graphing/line_prs_graph.py
+          python Generator/utils/graphing/lines_graph.py
+          python Generator/utils/graphing/top_libraries_graph.py
 
       - name: Generate data gif
         run: |

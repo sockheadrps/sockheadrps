@@ -1,9 +1,6 @@
 import requests
 import json
 import configparser
-import os
-
-print(os.getcwd())
 
 
 config = configparser.ConfigParser()
