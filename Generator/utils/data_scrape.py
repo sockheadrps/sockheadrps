@@ -50,20 +50,13 @@ def count_python_constructs(content):
 
     return libraries, counts
 
-# Initialize repo_data JSON structure
 repo_data = {"repo_stats": [], "commit_counts": [], "construct_counts": []}
 
-# Initialize a dictionary to store commit messages and a list for commit times
 commit_messages = defaultdict(list)
 commit_times = []
 
-stop = 5
-# Fetch commit messages and commit times for each repository
 for repo in user.get_repos():
     if not repo.fork:
-        stop += 1
-        if stop == 5:
-            break
         print(f"Processing {repo.name}...")
         commits = repo.get_commits()
         for commit in commits:
