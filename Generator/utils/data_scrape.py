@@ -5,15 +5,26 @@ import json
 import re
 from collections import defaultdict
 import pandas as pd
+import configparser
 
 load_dotenv()
+
+# Load configuration
+config = configparser.ConfigParser()
+config.read("config.ini")
+
+# Debug settings
+DEBUG = config.getboolean("Debug", "debug")
+STEP_COUNT = config.getint("Debug", "step_count")
 
 ACCESS_TOKEN = os.getenv("TOKEN")
 g = Github(ACCESS_TOKEN)
 user = g.get_user()
 
+
 def count_lines(content):
     return len(content.splitlines())
+
 
 def count_python_constructs(content):
     counts = {
@@ -50,13 +61,20 @@ def count_python_constructs(content):
 
     return libraries, counts
 
+
 repo_data = {"repo_stats": [], "commit_counts": [], "construct_counts": []}
 
 commit_messages = defaultdict(list)
 commit_times = []
 
-for repo in user.get_repos():
+# Limit the number of repositories processed based on SCRAP_COUNT
+repo_iter = iter(user.get_repos())
+for i, repo in enumerate(repo_iter):
     if not repo.fork:
+        if DEBUG:
+            if i >= STEP_COUNT:
+                break
+
         print(f"Processing {repo.name}...")
         commits = repo.get_commits()
         total_commits = 0
@@ -115,6 +133,9 @@ commit_df["DayOfWeek"] = commit_df["DayOfWeek"].map(weekday_map)
 commit_counts = commit_df.groupby(["DayOfWeek", "HourOfDay"]).size().reset_index(name="Count")
 
 repo_data["commit_counts"] = commit_counts.to_dict(orient="records")
+
+if DEBUG:
+    print(f"Commit counts:\n{commit_counts}")
 
 with open("repo_data.json", "w") as json_file:
     json.dump(repo_data, json_file, indent=4)

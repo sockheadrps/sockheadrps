@@ -48,6 +48,7 @@ wordcloud_image = np.array(wordcloud)
 fig = px.imshow(wordcloud_image)
 
 fig.update_layout(
+    font=dict(family="Arial, sans-serif", size=14, color="rgb(255, 255, 255)"),
     title="Top 60 Words in Commit Messages Word Cloud",
     xaxis={"visible": False},
     yaxis={"visible": False},
