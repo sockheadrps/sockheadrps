@@ -59,10 +59,12 @@ for repo in user.get_repos():
     if not repo.fork:
         print(f"Processing {repo.name}...")
         commits = repo.get_commits()
+        total_commits = 0
         for commit in commits:
             commit_date = commit.commit.author.date
             commit_times.append([commit_date.weekday(), commit_date.hour])
             commit_messages[repo.name].append(commit.commit.message)
+            total_commits += 1
 
         repo_info = {
             "repo_name": repo.name,
@@ -70,9 +72,9 @@ for repo in user.get_repos():
             "libraries": set(),
             "total_python_lines": 0,
             "file_extensions": {},
-            "total_commits": 0,
-            "commit_messages": commit_messages[repo.name],  # Add commit messages
-            "construct_counts": {},  # Add construct counts
+            "total_commits": total_commits,
+            "commit_messages": commit_messages[repo.name],
+            "construct_counts": {},
         }
 
         contents = repo.get_contents("")
@@ -96,7 +98,7 @@ for repo in user.get_repos():
                             repo_info["total_python_lines"] += count_lines(file_content_data)
                             libs, construct_counts = count_python_constructs(file_content_data)
                             repo_info["libraries"].update(libs)
-                            repo_info["construct_counts"] = construct_counts  # Add construct counts to repo_info
+                            repo_info["construct_counts"] = construct_counts
                         except UnicodeDecodeError:
                             print(f"Skipping non-UTF-8 file: {file_content.path}")
                     else:
@@ -105,19 +107,14 @@ for repo in user.get_repos():
         repo_info["libraries"] = list(repo_info["libraries"])
         repo_data["repo_stats"].append(repo_info)
 
-# Convert commit_times to a DataFrame
 commit_df = pd.DataFrame(commit_times, columns=["DayOfWeek", "HourOfDay"])
 
-# Map weekdays to labels
 weekday_map = {0: "Monday", 1: "Tuesday", 2: "Wednesday", 3: "Thursday", 4: "Friday", 5: "Saturday", 6: "Sunday"}
 commit_df["DayOfWeek"] = commit_df["DayOfWeek"].map(weekday_map)
 
-# Count the number of commits for each hour of the day and day of the week
 commit_counts = commit_df.groupby(["DayOfWeek", "HourOfDay"]).size().reset_index(name="Count")
 
-# Add commit counts to repo_data
 repo_data["commit_counts"] = commit_counts.to_dict(orient="records")
 
-# Save the data as JSON
 with open("repo_data.json", "w") as json_file:
     json.dump(repo_data, json_file, indent=4)
