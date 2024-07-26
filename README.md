@@ -32,13 +32,13 @@ A Dashboard/Homepage web application that has some handy features like weather, 
 ---
 
 
-### Data last generated on: 2024-07-24 via [GitHub Action 10068849555](https://github.com/sockheadrps/sockheadrps/actions/runs/10068849555)
+### Data last generated on: 2024-07-25 via [GitHub Action None](https://github.com/sockheadrps/sockheadrps/actions/runs/None)
 
   # 🔀 Recently Merged Pull Requests
 
 - **[Sounds.ext fixes](https://github.com/PythonistaGuild/TwitchIO/pull/454)**
   - Repository: [TwitchIO](https://github.com/PythonistaGuild/TwitchIO)
-  - Stars: 780
+  - Stars: 781
 
 - **[added tests for Actor](https://github.com/drinkincode/pygame-stream/pull/1)**
   - Repository: [pygame-stream](https://github.com/drinkincode/pygame-stream)
@@ -50,7 +50,8 @@ A Dashboard/Homepage web application that has some handy features like weather, 
 
 # 📊 Python Stats:
 
-### Total Lines of Python Code: 9298
-### Total Libraries/Modules Imported: 100
+### Total Lines of Python Code: 150
+### Total Libraries/Modules Imported: 8
+### Total Python Files: 3
 ![](DataVisuals/data.gif)
 
