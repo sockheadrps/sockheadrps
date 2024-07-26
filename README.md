@@ -32,7 +32,7 @@ A Dashboard/Homepage web application that has some handy features like weather, 
 ---
 
 
-### Data last generated on: 2024-07-25 via [GitHub Action None](https://github.com/sockheadrps/sockheadrps/actions/runs/None)
+### Data last generated on: 2024-07-26 via [GitHub Action 10104941500](https://github.com/sockheadrps/sockheadrps/actions/runs/10104941500)
 
   # 🔀 Recently Merged Pull Requests
 
@@ -50,8 +50,8 @@ A Dashboard/Homepage web application that has some handy features like weather, 
 
 # 📊 Python Stats:
 
-### Total Lines of Python Code: 150
-### Total Libraries/Modules Imported: 8
-### Total Python Files: 3
+### Total Lines of Python Code: 9306
+### Total Libraries/Modules Imported: 100
+### Total Python Files: 109
 ![](DataVisuals/data.gif)
 
