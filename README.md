@@ -10,7 +10,7 @@
 A project with a simple web client interface for collecting cursor path data. The goal is training an ML model to discern between human and artificial cursor movement as well as generating artificial movement that is indistinguishable from human cursor behavior.
 
 
-[<img alt="alt_text" width="400px" src="mmgif.gif" />](https://github.com/sockheadrps/AiMouseMovement)
+[<img alt="alt_text" width="400px" src="ProfileAssets/mmgif.gif" />](https://github.com/sockheadrps/AiMouseMovement)
 
 ## Dashboard
 
@@ -18,7 +18,7 @@ A project with a simple web client interface for collecting cursor path data. Th
 
 A Dashboard/Homepage web application that has some handy features like weather, time, bookmarks, notes and available service communication protocol to interact with standalone service clients
 
-[<img alt="alt_text" width="400px" src="overview.gif" />](https://github.com/sockheadrps/Terrace-Dashboard)
+[<img alt="alt_text" width="400px" src="ProfileAssets/overview.gif" />](https://github.com/sockheadrps/Terrace-Dashboard)
 
 # 📊 GitHub Stats:
 
