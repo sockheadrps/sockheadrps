@@ -32,7 +32,7 @@ A Dashboard/Homepage web application that has some handy features like weather, 
 ---
 
 
-### Data last generated on: 2024-08-15 via [GitHub Action 10397694285](https://github.com/sockheadrps/sockheadrps/actions/runs/10397694285)
+### Data last generated on: 2024-08-15 via [GitHub Action 10397738933](https://github.com/sockheadrps/sockheadrps/actions/runs/10397738933)
 
 ## 🚀 Recent Commits
 
@@ -47,6 +47,20 @@ fixed timezone issue](https://github.com/sockheadrps/PyProfileDataGen/commit/086
 - **TwitchFollowersServer - [Server implementation](https://github.com/sockheadrps/TwitchFollowersServer/commit/e4cac3b32f7d181255aeced9a86603ff7889ed49)**
   - Additions: 148 - Deletions: 0 - Total Changes: 148
 
+
+## 🔀 Recently Merged Pull Requests
+
+- **[Sounds.ext fixes](https://github.com/PythonistaGuild/TwitchIO/pull/454)**
+  - Repository: [TwitchIO](https://github.com/PythonistaGuild/TwitchIO)
+  - Stars: 782
+
+- **[added tests for Actor](https://github.com/drinkincode/pygame-stream/pull/1)**
+  - Repository: [pygame-stream](https://github.com/drinkincode/pygame-stream)
+  - Stars: 0
+
+- **[Added combo tracking functionality](https://github.com/Beaux44/Keystroke-Display/pull/1)**
+  - Repository: [Keystroke-Display](https://github.com/Beaux44/Keystroke-Display)
+  - Stars: 13
 
 # 📊 Python Stats:
 
