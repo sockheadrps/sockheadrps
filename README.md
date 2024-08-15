@@ -32,25 +32,25 @@ A Dashboard/Homepage web application that has some handy features like weather, 
 ---
 
 
-### Data last generated on: 2024-08-15 via [GitHub Action 10397738933](https://github.com/sockheadrps/sockheadrps/actions/runs/10397738933)
+### Data last generated on: 2024-08-15 via [GitHub Action 10397851436](https://github.com/sockheadrps/sockheadrps/actions/runs/10397851436)
 
 ## 🚀 Recent Commits
 
-- **PyProfileDataGen - [updated with file types bar graph fixed timezone issue](https://github.com/sockheadrps/PyProfileDataGen/commit/086bb906a821ff1b27a6e45e78fb0c81caa38f96)**
+- **PyProfileDataGen - [fixed newlines in recent commits](https://github.com/sockheadrps/PyProfileDataGen/commit/9c360ebe96c45f89205e690420c6808367dbab36)**
+  - Additions: 15 - Deletions: 9 - Total Changes: 24
+
+- **PyProfileDataGen - [updated with file types bar graph  fixed timezone issue](https://github.com/sockheadrps/PyProfileDataGen/commit/086bb906a821ff1b27a6e45e78fb0c81caa38f96)**
   - Additions: 121 - Deletions: 61 - Total Changes: 182
 
 - **TwitchFollowersServer - [Readme fix](https://github.com/sockheadrps/TwitchFollowersServer/commit/cca2c6456fce2e048b6ff1636d3bf4e3e7a4a87e)**
   - Additions: 12 - Deletions: 7 - Total Changes: 19
-
-- **TwitchFollowersServer - [Server implementation](https://github.com/sockheadrps/TwitchFollowersServer/commit/e4cac3b32f7d181255aeced9a86603ff7889ed49)**
-  - Additions: 148 - Deletions: 0 - Total Changes: 148
 
 
 ## 🔀 Recently Merged Pull Requests
 
 - **[Sounds.ext fixes](https://github.com/PythonistaGuild/TwitchIO/pull/454)**
   - Repository: [TwitchIO](https://github.com/PythonistaGuild/TwitchIO)
-  - Stars: 782
+  - Stars: 783
 
 - **[added tests for Actor](https://github.com/drinkincode/pygame-stream/pull/1)**
   - Repository: [pygame-stream](https://github.com/drinkincode/pygame-stream)
@@ -62,7 +62,7 @@ A Dashboard/Homepage web application that has some handy features like weather, 
 
 # 📊 Python Stats:
 
-### Total Lines of Python Code: 10093
+### Total Lines of Python Code: 10099
 ### Total Libraries/Modules Imported: 102
 ### Total Python Files: 118
 ![](DataVisuals/data.gif)
