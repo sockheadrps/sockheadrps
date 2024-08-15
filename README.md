@@ -32,24 +32,26 @@ A Dashboard/Homepage web application that has some handy features like weather, 
 ---
 
 
-### Data last generated on: 2024-08-14 via [GitHub Action None](https://github.com/sockheadrps/sockheadrps/actions/runs/None)
+### Data last generated on: 2024-08-15 via [GitHub Action 10397694285](https://github.com/sockheadrps/sockheadrps/actions/runs/10397694285)
 
 ## 🚀 Recent Commits
 
-- **AIODesa - [Update README with GitHub Actions [skip ci]](https://github.com/sockheadrps/AIODesa/commit/b9e65d27b853d0aa9671dc421cfe472f7ff094dc)**
-  - Additions: 2 - Deletions: 2 - Total Changes: 4
+- **PyProfileDataGen - [updated with file types bar graph
 
-- **AIODesa - [mypy versioning](https://github.com/sockheadrps/AIODesa/commit/1d7063644e5a10038f79a474bd64216dc226ea0c)**
-  - Additions: 1 - Deletions: 1 - Total Changes: 2
+fixed timezone issue](https://github.com/sockheadrps/PyProfileDataGen/commit/086bb906a821ff1b27a6e45e78fb0c81caa38f96)**
+  - Additions: 121 - Deletions: 61 - Total Changes: 182
 
-- **AIODesa - [mypy versioning](https://github.com/sockheadrps/AIODesa/commit/8b1907a8b161c287960c321683ad3a8a97459711)**
-  - Additions: 1 - Deletions: 0 - Total Changes: 1
+- **TwitchFollowersServer - [Readme fix](https://github.com/sockheadrps/TwitchFollowersServer/commit/cca2c6456fce2e048b6ff1636d3bf4e3e7a4a87e)**
+  - Additions: 12 - Deletions: 7 - Total Changes: 19
+
+- **TwitchFollowersServer - [Server implementation](https://github.com/sockheadrps/TwitchFollowersServer/commit/e4cac3b32f7d181255aeced9a86603ff7889ed49)**
+  - Additions: 148 - Deletions: 0 - Total Changes: 148
 
 
 # 📊 Python Stats:
 
-### Total Lines of Python Code: 4216
-### Total Libraries/Modules Imported: 45
-### Total Python Files: 39
+### Total Lines of Python Code: 10093
+### Total Libraries/Modules Imported: 102
+### Total Python Files: 118
 ![](DataVisuals/data.gif)
 
