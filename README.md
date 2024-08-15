@@ -32,38 +32,24 @@ A Dashboard/Homepage web application that has some handy features like weather, 
 ---
 
 
-### Data last generated on: 2024-08-07 via [GitHub Action 10281464548](https://github.com/sockheadrps/sockheadrps/actions/runs/10281464548)
+### Data last generated on: 2024-08-14 via [GitHub Action None](https://github.com/sockheadrps/sockheadrps/actions/runs/None)
 
 ## 🚀 Recent Commits
 
-- **PyProfileDataGen - [file types and construct fix](https://github.com/sockheadrps/PyProfileDataGen/commit/a151a839a93bb06943060f6b57cfa5fd4be9c5c1)**
-  - Additions: 279 - Deletions: 76 - Total Changes: 355
+- **AIODesa - [Update README with GitHub Actions [skip ci]](https://github.com/sockheadrps/AIODesa/commit/b9e65d27b853d0aa9671dc421cfe472f7ff094dc)**
+  - Additions: 2 - Deletions: 2 - Total Changes: 4
 
-- **rpaudio - [basic threaded implementation of audio player python binding](https://github.com/sockheadrps/rpaudio/commit/03333e07c05f60f5d8d9ab82d63c1528af731572)**
-  - Additions: 126 - Deletions: 21 - Total Changes: 147
+- **AIODesa - [mypy versioning](https://github.com/sockheadrps/AIODesa/commit/1d7063644e5a10038f79a474bd64216dc226ea0c)**
+  - Additions: 1 - Deletions: 1 - Total Changes: 2
 
-- **rpaudio - [Delete dumb comment](https://github.com/sockheadrps/rpaudio/commit/550b2dc1e8ad6b3a962a1f5772d410e2f2e70a75)**
-  - Additions: 0 - Deletions: 94 - Total Changes: 94
+- **AIODesa - [mypy versioning](https://github.com/sockheadrps/AIODesa/commit/8b1907a8b161c287960c321683ad3a8a97459711)**
+  - Additions: 1 - Deletions: 0 - Total Changes: 1
 
-
-## 🔀 Recently Merged Pull Requests
-
-- **[Sounds.ext fixes](https://github.com/PythonistaGuild/TwitchIO/pull/454)**
-  - Repository: [TwitchIO](https://github.com/PythonistaGuild/TwitchIO)
-  - Stars: 782
-
-- **[added tests for Actor](https://github.com/drinkincode/pygame-stream/pull/1)**
-  - Repository: [pygame-stream](https://github.com/drinkincode/pygame-stream)
-  - Stars: 0
-
-- **[Added combo tracking functionality](https://github.com/Beaux44/Keystroke-Display/pull/1)**
-  - Repository: [Keystroke-Display](https://github.com/Beaux44/Keystroke-Display)
-  - Stars: 13
 
 # 📊 Python Stats:
 
-### Total Lines of Python Code: 9977
-### Total Libraries/Modules Imported: 102
-### Total Python Files: 118
+### Total Lines of Python Code: 4216
+### Total Libraries/Modules Imported: 45
+### Total Python Files: 39
 ![](DataVisuals/data.gif)
 

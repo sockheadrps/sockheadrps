@@ -1,5 +1,3 @@
-@echo off
-
 REM Run data scra[er]
 python Generator\utils\data_scrape.py
 
