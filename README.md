@@ -36,9 +36,7 @@ A Dashboard/Homepage web application that has some handy features like weather, 
 
 ## 🚀 Recent Commits
 
-- **PyProfileDataGen - [updated with file types bar graph
-
-fixed timezone issue](https://github.com/sockheadrps/PyProfileDataGen/commit/086bb906a821ff1b27a6e45e78fb0c81caa38f96)**
+- **PyProfileDataGen - [updated with file types bar graph fixed timezone issue](https://github.com/sockheadrps/PyProfileDataGen/commit/086bb906a821ff1b27a6e45e78fb0c81caa38f96)**
   - Additions: 121 - Deletions: 61 - Total Changes: 182
 
 - **TwitchFollowersServer - [Readme fix](https://github.com/sockheadrps/TwitchFollowersServer/commit/cca2c6456fce2e048b6ff1636d3bf4e3e7a4a87e)**
