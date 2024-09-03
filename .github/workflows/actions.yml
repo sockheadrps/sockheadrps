@@ -76,8 +76,6 @@ jobs:
       - name: Remove PythonDataGen
         run: |
           rm -rf PyProfileDataGen 
-          git rm --cached PyProfileDataGen
-
 
       - name: Commit files
         run: |
