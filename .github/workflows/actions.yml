@@ -12,6 +12,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
       - name: Checkout PythonDataGen repository
         run: |
           git config --global user.email "action@github.com"
@@ -20,8 +24,6 @@ jobs:
         env:
           TOKEN: ${{ secrets.TOKEN }}
 
-      - name: Checkout repository
-        uses: actions/checkout@v4
       
       - name: Move files from PythonDataGen to current repository
         run: |
