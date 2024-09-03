@@ -27,7 +27,6 @@ jobs:
       
       - name: Move files from PythonDataGen to current repository
         run: |
-          git rm --cached PyProfileDataGen
           mv PyProfileDataGen/Generator ./
           mv PyProfileDataGen/LICENSE ./
           mv PyProfileDataGen/config.ini ./
@@ -75,7 +74,10 @@ jobs:
         run: python Generator/readme.py
 
       - name: Remove PythonDataGen
-        run: rm -rf PyProfileDataGen 
+        run: |
+          rm -rf PyProfileDataGen 
+          git rm --cached PyProfileDataGen
+
 
       - name: Commit files
         run: |
