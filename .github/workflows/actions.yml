@@ -27,8 +27,6 @@ jobs:
       
       - name: Move files from PythonDataGen to current repository
         run: |
-          echo "Contents of the parent directory:"
-          cd ..
           ls -a
           mv PyProfileDataGen/Generator ./
           mv PyProfileDataGen/.env ./
