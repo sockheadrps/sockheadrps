@@ -32,28 +32,28 @@ A Dashboard/Homepage web application that has some handy features like weather, 
 ---
 
 
-### Data last generated on: 2024-08-27 via [GitHub Action 10572015821](https://github.com/sockheadrps/sockheadrps/actions/runs/10572015821)
+### Data last generated on: 2024-09-03 via [GitHub Action 10677709222](https://github.com/sockheadrps/sockheadrps/actions/runs/10677709222)
 
 ## 🚀 Recent Commits
 
-- **rpaudio - [Merge branch 'experimental'](https://github.com/sockheadrps/rpaudio/commit/910a90a290f8f24e87bcbb772eee2c1b1dea2605)**
-  - Additions: 323 - Deletions: 266 - Total Changes: 589
+- **rpaudio - [0.0.5](https://github.com/sockheadrps/rpaudio/commit/1ddc3dd4d6bac5bc8039661cbc2d76f76f4f221f)**
+  - Additions: 1 - Deletions: 1 - Total Changes: 2
 
-- **rpaudio - [Seperated builds](https://github.com/sockheadrps/rpaudio/commit/1b4cab29bdb11f6996c57ecd4a4499bc93d8a4a9)**
-  - Additions: 6 - Deletions: 1 - Total Changes: 7
+- **rpaudio - [0.0.5](https://github.com/sockheadrps/rpaudio/commit/1f956b72797a36b309721d0a2124b6140b408b43)**
+  - Additions: 1 - Deletions: 2 - Total Changes: 3
 
-- **rpaudio - [Seperated build actions](https://github.com/sockheadrps/rpaudio/commit/19a331f23a33e9aba84b7553688c4f63b25ea5a0)**
-  - Additions: 3 - Deletions: 1 - Total Changes: 4
+- **rpaudio - [0.0.5](https://github.com/sockheadrps/rpaudio/commit/5b0447e5af6292c5fce0efba79cf88c681ef05e8)**
+  - Additions: 2 - Deletions: 2 - Total Changes: 4
 
 
 ## 🔀 Recently Merged Pull Requests
 
-- **[Feature/documentation](https://github.com/drinkincode/dungeon_ursina/pull/6)**
-  - Repository: [dungeon_ursina](https://github.com/drinkincode/dungeon_ursina)
+- **[Feature/documentation](https://github.com/drinkincode/dungeon-of-ursina/pull/6)**
+  - Repository: [dungeon-of-ursina](https://github.com/drinkincode/dungeon-of-ursina)
   - Stars: 0
 
-- **[requirements.txt](https://github.com/drinkincode/dungeon_ursina/pull/2)**
-  - Repository: [dungeon_ursina](https://github.com/drinkincode/dungeon_ursina)
+- **[requirements.txt](https://github.com/drinkincode/dungeon-of-ursina/pull/2)**
+  - Repository: [dungeon-of-ursina](https://github.com/drinkincode/dungeon-of-ursina)
   - Stars: 0
 
 - **[Sounds.ext fixes](https://github.com/PythonistaGuild/TwitchIO/pull/454)**
@@ -62,8 +62,8 @@ A Dashboard/Homepage web application that has some handy features like weather, 
 
 # 📊 Python Stats:
 
-### Total Lines of Python Code: 10471
+### Total Lines of Python Code: 10961
 ### Total Libraries/Modules Imported: 103
-### Total Python Files: 123
+### Total Python Files: 128
 ![](DataVisuals/data.gif)
 
