@@ -22,8 +22,6 @@ jobs:
 
       - name: Checkout repository
         uses: actions/checkout@v4
-        env:
-          TOKEN: ${{ secrets.TOKEN }}
       
       - name: Move files from PythonDataGen to current repository
         run: |
