@@ -25,6 +25,8 @@ jobs:
       
       - name: Move files from PythonDataGen to current repository
         run: |
+          ls -a
+          pwd
           mv PyProfileDataGen/Generator ./
           mv PyProfileDataGen/.env ./
           mv PyProfileDataGen/LICENSE ./
