@@ -29,7 +29,7 @@ jobs:
         run: |
           ls -a
           mv PyProfileDataGen/Generator ./
-          mv PyProfileDataGen/.env ./
+          mv PyProfileDataGen/.secrets ./
           mv PyProfileDataGen/LICENSE ./
           mv PyProfileDataGen/config.ini ./
           mv PyProfileDataGen/local_run.bat ./
