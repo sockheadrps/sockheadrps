@@ -12,8 +12,27 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout PythonDataGen repository
+        run: |
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Action"
+          git clone https://github.com/sockheadrps/PyProfileDataGen.git
+        env:
+          TOKEN: ${{ secrets.TOKEN }}
+
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
+        env:
+          TOKEN: ${{ secrets.TOKEN }}
+      
+      - name: Move files from PythonDataGen to current repository
+        run: |
+          mv PyProfileDataGen/Generator ./
+          mv PyProfileDataGen/.env ./
+          mv PyProfileDataGen/LICENSE ./
+          mv PyProfileDataGen/config.ini ./
+          mv PyProfileDataGen/local_run.bat ./
+          mv PyProfileDataGen/requirements.txt ./
 
       - name: Set up Python
         uses: actions/setup-python@v2
@@ -66,4 +85,4 @@ jobs:
         uses: ad-m/github-push-action@v0.6.0
         with:
           github_token: ${{ secrets.TOKEN }}
-          branch: main
+          branch: test
