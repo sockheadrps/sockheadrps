@@ -1,4 +1,4 @@
-from github import Github
+from github import Github, GithubException
 from dotenv import load_dotenv
 import os
 import json
@@ -112,95 +112,104 @@ for i, repo in enumerate(repo_iter):
             continue
 
         print(f"Processing {repo.name}...")
-        commits = repo.get_commits()
-        total_commits = 0
-        recent_commits = []
-        for commit in commits:
-            commit_date = commit.commit.author.date
-            commit_times.append([commit_date.weekday(), commit_date.hour])
-            commit_messages[repo.name].append(commit.commit.message)
-            total_commits += 1
+        try:
+            commits = repo.get_commits()
+            total_commits = 0
+            recent_commits = []
+            for commit in commits:
+                commit_date = commit.commit.author.date
+                commit_times.append([commit_date.weekday(), commit_date.hour])
+                commit_messages[repo.name].append(commit.commit.message)
+                total_commits += 1
 
-            if is_recent_commit(commit_date):
-                commit_details = {
-                    "repo_name": repo.name,
-                    "repo_url": f"https://github.com/{user.login}/{repo.name}",
-                    "sha": commit.sha,
-                    "message": commit.commit.message,
-                    "author": commit.commit.author.name,
-                    "date": commit_date.isoformat()
-                }
+                if is_recent_commit(commit_date):
+                    commit_details = {
+                        "repo_name": repo.name,
+                        "repo_url": f"https://github.com/{user.login}/{repo.name}",
+                        "sha": commit.sha,
+                        "message": commit.commit.message,
+                        "author": commit.commit.author.name,
+                        "date": commit_date.isoformat()
+                    }
 
-                commit_data = repo.get_commit(commit.sha)
-                commit_details["additions"] = commit_data.stats.additions
-                commit_details["deletions"] = commit_data.stats.deletions
-                commit_details["total_changes"] = commit_data.stats.total
+                    commit_data = repo.get_commit(commit.sha)
+                    commit_details["additions"] = commit_data.stats.additions
+                    commit_details["deletions"] = commit_data.stats.deletions
+                    commit_details["total_changes"] = commit_data.stats.total
 
-                recent_commits.append(commit_details)
+                    recent_commits.append(commit_details)
 
-        repo_info = {
-            "repo_name": repo.name,
-            "python_files": [],
-            "libraries": set(),
-            "total_python_files": 0,
-            "total_python_lines": 0,
-            "file_extensions": {},
-            "total_commits": total_commits,
-            "commit_messages": commit_messages[repo.name],
-            "construct_counts": {
-                "if statements": 0,
-                "while loops": 0,
-                "for loops": 0,
-                "regular functions created": 0,
-                "async functions created": 0,
-                "classes created": 0,
-            },
-        }
+            repo_info = {
+                "repo_name": repo.name,
+                "python_files": [],
+                "libraries": set(),
+                "total_python_files": 0,
+                "total_python_lines": 0,
+                "file_extensions": {},
+                "total_commits": total_commits,
+                "commit_messages": commit_messages[repo.name],
+                "construct_counts": {
+                    "if statements": 0,
+                    "while loops": 0,
+                    "for loops": 0,
+                    "regular functions created": 0,
+                    "async functions created": 0,
+                    "classes created": 0,
+                },
+            }
 
-        contents = repo.get_contents("")
-        while contents:
-            file_content = contents.pop(0)
-            if file_content.type == "dir":
-                contents.extend(repo.get_contents(file_content.path))
-            else:
-                # Split on dot to handle special cases
-                split_path = file_content.path.rsplit('.', 1)
-                if len(split_path) > 1:
-                    file_extension = '.' + split_path[-1]
+            contents = repo.get_contents("")
+            while contents:
+                file_content = contents.pop(0)
+                if file_content.type == "dir":
+                    contents.extend(repo.get_contents(file_content.path))
                 else:
-                    file_extension = file_content.path
-
-                if file_extension in repo_info["file_extensions"]:
-                    repo_info["file_extensions"][file_extension] += 1
-                else:
-                    repo_info["file_extensions"][file_extension] = 1
-
-                if file_extension == ".py":
-                    repo_info["total_python_files"] += 1
-                    if file_content.encoding == "base64":
-                        try:
-                            file_content_data = file_content.decoded_content.decode(
-                                "utf-8")
-                            repo_info["python_files"].append(file_content.path)
-                            repo_info["total_python_lines"] += count_lines(
-                                file_content_data)
-                            libs, construct_counts = count_python_constructs(
-                                file_content_data)
-                            repo_info["libraries"].update(libs)
-
-                            for key in repo_info["construct_counts"]:
-                                repo_info["construct_counts"][key] += construct_counts[key]
-
-                        except UnicodeDecodeError:
-                            print(
-                                f"Skipping non-UTF-8 file: {file_content.path}")
+                    # Split on dot to handle special cases
+                    split_path = file_content.path.rsplit('.', 1)
+                    if len(split_path) > 1:
+                        file_extension = '.' + split_path[-1]
                     else:
-                        print(
-                            f"Skipping file with unsupported encoding: {file_content.path}")
+                        file_extension = file_content.path
 
-        repo_info["libraries"] = list(repo_info["libraries"])
-        repo_data["repo_stats"].append(repo_info)
-        repo_data["recent_commits"].extend(recent_commits)
+                    if file_extension in repo_info["file_extensions"]:
+                        repo_info["file_extensions"][file_extension] += 1
+                    else:
+                        repo_info["file_extensions"][file_extension] = 1
+
+                    if file_extension == ".py":
+                        repo_info["total_python_files"] += 1
+                        if file_content.encoding == "base64":
+                            try:
+                                file_content_data = file_content.decoded_content.decode(
+                                    "utf-8")
+                                repo_info["python_files"].append(file_content.path)
+                                repo_info["total_python_lines"] += count_lines(
+                                    file_content_data)
+                                libs, construct_counts = count_python_constructs(
+                                    file_content_data)
+                                repo_info["libraries"].update(libs)
+
+                                for key in repo_info["construct_counts"]:
+                                    repo_info["construct_counts"][key] += construct_counts[key]
+
+                            except UnicodeDecodeError:
+                                print(
+                                    f"Skipping non-UTF-8 file: {file_content.path}")
+                        else:
+                            print(
+                                f"Skipping file with unsupported encoding: {file_content.path}")
+
+            repo_info["libraries"] = list(repo_info["libraries"])
+            repo_data["repo_stats"].append(repo_info)
+            repo_data["recent_commits"].extend(recent_commits)
+            
+        except GithubException as e:
+            if e.status == 409 and "Git Repository is empty" in str(e):
+                print(f"Repository '{repo.name}' is empty. Skipping...")
+                continue
+            else:
+                print(f"Error processing repository '{repo.name}': {e}")
+                continue
 
 # Create DataFrame for commit times
 commit_df = pd.DataFrame(commit_times, columns=["DayOfWeek", "HourOfDay"])
