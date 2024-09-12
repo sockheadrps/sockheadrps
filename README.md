@@ -33,18 +33,18 @@ A Dashboard/Homepage web application that has some handy features like weather, 
 ---
 
 
-### Data last generated on: 2024-09-07 via [GitHub Action 10750571191](https://github.com/sockheadrps/sockheadrps/actions/runs/10750571191)
+### Data last generated on: 2024-09-12 via [GitHub Action 10825015765](https://github.com/sockheadrps/sockheadrps/actions/runs/10825015765)
 
 ## 🚀 Recent Commits
 
+- **PyProfileDataGen - [Merge pull request #10 from codingwithstrangers/main  Making this for a PR - codingwithstrangers Workflow updates](https://github.com/sockheadrps/PyProfileDataGen/commit/f97c780a478a95e7f9e8ad2d8be74b7716cec1d7)**
+  - Additions: 28 - Deletions: 3 - Total Changes: 31
+
+- **PyProfileDataGen - [Making this for a PR](https://github.com/sockheadrps/PyProfileDataGen/commit/1d9f3db7552a8237c1ce9342cb6891bb2920609c)**
+  - Additions: 28 - Deletions: 3 - Total Changes: 31
+
 - **rpaudio - [0.0.5](https://github.com/sockheadrps/rpaudio/commit/1ddc3dd4d6bac5bc8039661cbc2d76f76f4f221f)**
   - Additions: 1 - Deletions: 1 - Total Changes: 2
-
-- **rpaudio - [0.0.5](https://github.com/sockheadrps/rpaudio/commit/1f956b72797a36b309721d0a2124b6140b408b43)**
-  - Additions: 1 - Deletions: 2 - Total Changes: 3
-
-- **rpaudio - [0.0.5](https://github.com/sockheadrps/rpaudio/commit/5b0447e5af6292c5fce0efba79cf88c681ef05e8)**
-  - Additions: 2 - Deletions: 2 - Total Changes: 4
 
 
 ## 🔀 Recently Merged Pull Requests
@@ -59,7 +59,7 @@ A Dashboard/Homepage web application that has some handy features like weather, 
 
 - **[Sounds.ext fixes](https://github.com/PythonistaGuild/TwitchIO/pull/454)**
   - Repository: [TwitchIO](https://github.com/PythonistaGuild/TwitchIO)
-  - Stars: 785
+  - Stars: 789
 
 # 📊 Python Stats:
 
