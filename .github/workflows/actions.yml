@@ -27,11 +27,11 @@ jobs:
       
       - name: Move files from PythonDataGen to current repository
         run: |
-          mv PyProfileDataGen/Generator ./
-          mv PyProfileDataGen/LICENSE ./
-          mv PyProfileDataGen/config.ini ./
-          mv PyProfileDataGen/local_run.bat ./
-          mv PyProfileDataGen/requirements.txt ./
+          mv -f PyProfileDataGen/Generator ./
+          mv -f PyProfileDataGen/LICENSE ./
+          mv -f PyProfileDataGen/config.ini ./
+          mv -f PyProfileDataGen/local_run.bat ./
+          mv -f PyProfileDataGen/requirements.txt ./
 
       - name: Set up Python
         uses: actions/setup-python@v2
