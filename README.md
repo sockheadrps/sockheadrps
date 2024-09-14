@@ -33,24 +33,24 @@ A Dashboard/Homepage web application that has some handy features like weather, 
 ---
 
 
-### Data last generated on: 2024-09-14 via [GitHub Action 10862024225](https://github.com/sockheadrps/sockheadrps/actions/runs/10862024225)
+### Data last generated on: 2024-09-14 via [GitHub Action 10866071305](https://github.com/sockheadrps/sockheadrps/actions/runs/10866071305)
 
 ## 🚀 Recent Commits
 
-- **strangest_hashmap - [looking in node for key and values](https://github.com/codingwithstrangers/strangest_hashmap/commit/a356dbbd867de0f50b181380aaca138b6a4e3c3a)**
-  - Additions: 120 - Deletions: 46 - Total Changes: 166
+- **prdirections - [Rename dir.md to README.MD](https://github.com/sockheadrps/prdirections/commit/931c665a534dad2f45775eced400a381532ba6be)**
+  - Additions: 0 - Deletions: 0 - Total Changes: 0
 
-- **strangest_hashmap - [Making linked list to finish hashmap](https://github.com/codingwithstrangers/strangest_hashmap/commit/6e382705a17c9a7bb96fb28773a0909ece394868)**
-  - Additions: 58 - Deletions: 2 - Total Changes: 60
+- **prdirections - [instructions](https://github.com/sockheadrps/prdirections/commit/382a344fc8e653f1df8ceddfc0887c80aecfb2f6)**
+  - Additions: 155 - Deletions: 11 - Total Changes: 166
 
-- **strangest_hashmap - [start building hashmap](https://github.com/codingwithstrangers/strangest_hashmap/commit/b4055276ceaa1c94856228faa56bf7740caa98fb)**
-  - Additions: 223 - Deletions: 0 - Total Changes: 223
+- **prdirections - [initial commit](https://github.com/sockheadrps/prdirections/commit/5a3a97ca97845c4bd741d7b46180c700c51b9819)**
+  - Additions: 45 - Deletions: 0 - Total Changes: 45
 
 
 # 📊 Python Stats:
 
-### Total Lines of Python Code: 6088
-### Total Libraries/Modules Imported: 51
-### Total Python Files: 41
+### Total Lines of Python Code: 10980
+### Total Libraries/Modules Imported: 103
+### Total Python Files: 129
 ![](DataVisuals/data.gif)
 
