@@ -10,8 +10,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      GITHUB_USER_NAME: ${{ secrets.GITHUB_USER_NAME }}
     steps:
 
       - name: Checkout repository
