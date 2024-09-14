@@ -31,40 +31,26 @@ A Dashboard/Homepage web application that has some handy features like weather, 
 
 
 ---
- 
 
-### Data last generated on: 2024-09-12 via [GitHub Action 10825015765](https://github.com/sockheadrps/sockheadrps/actions/runs/10825015765)
+
+### Data last generated on: 2024-09-14 via [GitHub Action 10862024225](https://github.com/sockheadrps/sockheadrps/actions/runs/10862024225)
 
 ## 🚀 Recent Commits
 
-- **PyProfileDataGen - [Merge pull request #10 from codingwithstrangers/main  Making this for a PR - codingwithstrangers Workflow updates](https://github.com/sockheadrps/PyProfileDataGen/commit/f97c780a478a95e7f9e8ad2d8be74b7716cec1d7)**
-  - Additions: 28 - Deletions: 3 - Total Changes: 31
+- **strangest_hashmap - [looking in node for key and values](https://github.com/codingwithstrangers/strangest_hashmap/commit/a356dbbd867de0f50b181380aaca138b6a4e3c3a)**
+  - Additions: 120 - Deletions: 46 - Total Changes: 166
 
-- **PyProfileDataGen - [Making this for a PR](https://github.com/sockheadrps/PyProfileDataGen/commit/1d9f3db7552a8237c1ce9342cb6891bb2920609c)**
-  - Additions: 28 - Deletions: 3 - Total Changes: 31
+- **strangest_hashmap - [Making linked list to finish hashmap](https://github.com/codingwithstrangers/strangest_hashmap/commit/6e382705a17c9a7bb96fb28773a0909ece394868)**
+  - Additions: 58 - Deletions: 2 - Total Changes: 60
 
-- **rpaudio - [0.0.5](https://github.com/sockheadrps/rpaudio/commit/1ddc3dd4d6bac5bc8039661cbc2d76f76f4f221f)**
-  - Additions: 1 - Deletions: 1 - Total Changes: 2
+- **strangest_hashmap - [start building hashmap](https://github.com/codingwithstrangers/strangest_hashmap/commit/b4055276ceaa1c94856228faa56bf7740caa98fb)**
+  - Additions: 223 - Deletions: 0 - Total Changes: 223
 
-
-## 🔀 Recently Merged Pull Requests
-
-- **[Feature/documentation](https://github.com/drinkincode/dungeon-of-ursina/pull/6)**
-  - Repository: [dungeon-of-ursina](https://github.com/drinkincode/dungeon-of-ursina)
-  - Stars: 0
-
-- **[requirements.txt](https://github.com/drinkincode/dungeon-of-ursina/pull/2)**
-  - Repository: [dungeon-of-ursina](https://github.com/drinkincode/dungeon-of-ursina)
-  - Stars: 0
-
-- **[Sounds.ext fixes](https://github.com/PythonistaGuild/TwitchIO/pull/454)**
-  - Repository: [TwitchIO](https://github.com/PythonistaGuild/TwitchIO)
-  - Stars: 789
 
 # 📊 Python Stats:
 
-### Total Lines of Python Code: 10961
-### Total Libraries/Modules Imported: 103
-### Total Python Files: 128
+### Total Lines of Python Code: 6088
+### Total Libraries/Modules Imported: 51
+### Total Python Files: 41
 ![](DataVisuals/data.gif)
 
