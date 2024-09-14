@@ -11,7 +11,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-
       - name: Checkout repository
         uses: actions/checkout@v4
       
@@ -46,14 +45,13 @@ jobs:
       - name: Ensure DataVisuals directory exists
         run: mkdir -p DataVisuals
 
-      - name: Run update_config.py
-        run: python update_config.py
-        
-      - name: Run data_scrape.py
+      - name: Update_config.py and Run data_scrape.py
         env:
           TOKEN: ${{ secrets.TOKEN }}
           GITHUB_RUN_ID: ${{ github.run_id }}
-        run: python Generator/utils/data_scrape.py
+        run: |
+          python update_config.py
+          python Generator/utils/data_scrape.py
 
       - name: Gather Merged PRs
         run: python Generator/utils/mergedprs.py

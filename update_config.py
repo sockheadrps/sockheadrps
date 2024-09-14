@@ -6,8 +6,8 @@ config = configparser.ConfigParser()
 config.read('config.ini')
 
 # Get the environment variable for the GitHub username
-github_user_name = 'codingwithstrangers'
-gif_frame_duration = '10000'
+github_user_name = 'sockheadrps'
+gif_frame_duration = '6000'
 
 
 # Update the github_user_name in the config file
