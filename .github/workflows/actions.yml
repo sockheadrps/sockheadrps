@@ -3,7 +3,7 @@ name: Run Python Scripts For Data Gathering and Generation
 on:
   push:
     branches:
-      - test
+      - main
   workflow_dispatch:
 
 
@@ -93,4 +93,4 @@ jobs:
         uses: ad-m/github-push-action@v0.6.0
         with:
           github_token: ${{ secrets.TOKEN }}
-          branch: test
+          branch: main
