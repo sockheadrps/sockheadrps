@@ -31,7 +31,7 @@ A Dashboard/Homepage web application that has some handy features like weather, 
 
 
 ---
-
+ 
 
 ### Data last generated on: 2024-09-12 via [GitHub Action 10825015765](https://github.com/sockheadrps/sockheadrps/actions/runs/10825015765)
 
