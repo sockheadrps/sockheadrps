@@ -31,25 +31,25 @@ A Dashboard/Homepage web application that has some handy features like weather, 
 
 
 ---
- 
 
-### Data last generated on: 2024-09-14 via [GitHub Action 10866071305](https://github.com/sockheadrps/sockheadrps/actions/runs/10866071305)
+
+### Data last generated on: 2024-09-20 via [GitHub Action 10961472219](https://github.com/sockheadrps/sockheadrps/actions/runs/10961472219)
 
 ## 🚀 Recent Commits
 
-- **prdirections - [Rename dir.md to README.MD](https://github.com/sockheadrps/prdirections/commit/931c665a534dad2f45775eced400a381532ba6be)**
-  - Additions: 0 - Deletions: 0 - Total Changes: 0
+- **PyProfileDataGen - [Merge pull request #12 from codingwithstrangers/main  This is the version we made that works](https://github.com/sockheadrps/PyProfileDataGen/commit/4d9138c451b062251a694ab9a53074d438c44cd7)**
+  - Additions: 12 - Deletions: 7 - Total Changes: 19
 
-- **prdirections - [instructions](https://github.com/sockheadrps/prdirections/commit/382a344fc8e653f1df8ceddfc0887c80aecfb2f6)**
-  - Additions: 155 - Deletions: 11 - Total Changes: 166
+- **PyProfileDataGen - [Merge branch 'main' into main](https://github.com/sockheadrps/PyProfileDataGen/commit/00e43a2cd70db8e664bdb31012a1fc96ddcdf639)**
+  - Additions: 19 - Deletions: 4 - Total Changes: 23
 
-- **prdirections - [initial commit](https://github.com/sockheadrps/prdirections/commit/5a3a97ca97845c4bd741d7b46180c700c51b9819)**
-  - Additions: 45 - Deletions: 0 - Total Changes: 45
+- **PyProfileDataGen - [This is the update to config](https://github.com/sockheadrps/PyProfileDataGen/commit/d4e81f37fb33187ca4b9053ffa603b1bba6eaeb3)**
+  - Additions: 25 - Deletions: 5 - Total Changes: 30
 
 
 # 📊 Python Stats:
 
-### Total Lines of Python Code: 10980
+### Total Lines of Python Code: 10982
 ### Total Libraries/Modules Imported: 103
 ### Total Python Files: 129
 ![](DataVisuals/data.gif)
