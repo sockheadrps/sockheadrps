@@ -14,24 +14,24 @@
 ---
 
 
-### Data last generated on: 2024-09-21 via [GitHub Action 10973428937](https://github.com/sockheadrps/sockheadrps/actions/runs/10973428937)
+### Data last generated on: 2024-09-23 via [GitHub Action 10991047260](https://github.com/sockheadrps/sockheadrps/actions/runs/10991047260)
 
 ## 🚀 Recent Commits
 
-- **rpaudio - [Merge pull request #10 from sockheadrps/experimental  Experimental features merge to main: FadeIn, FadeOut, ChangeSpeed](https://github.com/sockheadrps/rpaudio/commit/3c5f36ef64cf9d2ddc7badb9661fd1c1fb1ee8e3)**
-  - Additions: 1684 - Deletions: 536 - Total Changes: 2220
+- **rpaudio - [Merge branch 'experimental'](https://github.com/sockheadrps/rpaudio/commit/fa3fc383dcaa4d3d4b64a11deb35b555991056e0)**
+  - Additions: 275 - Deletions: 380 - Total Changes: 655
 
-- **rpaudio - [Update examples and stub file](https://github.com/sockheadrps/rpaudio/commit/607178fa2d7c7dfb2be0b15d402f710ad0bae468)**
-  - Additions: 8 - Deletions: 10 - Total Changes: 18
+- **rpaudio - [Added adjustments for fades to handle speed changes](https://github.com/sockheadrps/rpaudio/commit/85c9f17c60fe07b953fdf54a8291a13e9e5822e1)**
+  - Additions: 158 - Deletions: 133 - Total Changes: 291
 
-- **rpaudio - [test workflow](https://github.com/sockheadrps/rpaudio/commit/3550390327efed042dcfd1d0eadbeb1fc1627ae3)**
-  - Additions: 18 - Deletions: 18 - Total Changes: 36
+- **rpaudio - [rename metadata tests](https://github.com/sockheadrps/rpaudio/commit/fa3a5ab4532da0518e621306cbb8f1cacc5464ef)**
+  - Additions: 0 - Deletions: 0 - Total Changes: 0
 
 
 # 📊 Python Stats:
 
-### Total Lines of Python Code: 11383
+### Total Lines of Python Code: 11455
 ### Total Libraries/Modules Imported: 103
-### Total Python Files: 131
+### Total Python Files: 132
 ![](DataVisuals/data.gif)
 
