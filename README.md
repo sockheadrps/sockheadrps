@@ -1,8 +1,3 @@
-# Sockheadrps
- An Electrician supporting critical IT loads on the Engineering and Operations team at a Tier 3 Data Center with technical skills and passions for:
-<br>
-<br>
-**Programming Technolgies:**
 
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=plastic&logo=python&logoColor=ffdd54) 
@@ -25,14 +20,14 @@
 ![Docker](https://img.shields.io/badge/Docker-blue?logo=docker&logoColor=white)
 <br>
 
-**Supporting/Maintaining projects:**
 
-### [Rpaudio]()
+
+### ***[Rpaudio]()***
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/t/sockheadrps/rpaudio)    
 ***Python binding written in Rust for interfacing with and managing audio.***
 
 
-###  [PyProfileDataGenertor](https://github.com/sockheadrps/PyProfileDataGen)
+###  [***PyProfileDataGenertor***](https://github.com/sockheadrps/PyProfileDataGen)
 ![PyProfileDataGenertor](https://img.shields.io/github/commit-activity/t/sockheadrps/PyProfileDataGen?color=orange)  
 ***A tool for data analysis and visualization creation/aggregation for representing code and the technical datapoints to automatically deploy to your Github Profile.***
 
