@@ -10,10 +10,11 @@ github_user_name = 'sockheadrps'
 gif_frame_duration = '6000'
 generate_merged_prs = 'true'
 
-
 # Update the github_user_name in the config file
 config.set('Settings', 'github_user_name', github_user_name)
 config.set('Settings', 'gif_frame_duration', gif_frame_duration)
+
+# Update the generate_merged_prs in the config file
 config.set('Readme', 'generate_merged_prs', generate_merged_prs)
 
 # Write the changes back to the config.ini file
