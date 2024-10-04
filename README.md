@@ -22,7 +22,7 @@
  
 
 
-### ***[Rpaudio]()***
+### ***[Rpaudio](https://github.com/sockheadrps/rpaudio)***
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/t/sockheadrps/rpaudio)    
 ***Python binding written in Rust for interfacing with and managing audio.***
 
