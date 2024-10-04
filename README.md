@@ -48,18 +48,18 @@
 ---
 
 
-### Data last generated on: 2024-10-01 via [GitHub Action 11123200875](https://github.com/sockheadrps/sockheadrps/actions/runs/11123200875)
+### Data last generated on: 2024-10-04 via [GitHub Action 11179663893](https://github.com/sockheadrps/sockheadrps/actions/runs/11179663893)
 
 ## 🚀 Recent Commits
 
-- **RpaudioFastAPIExample - [Finished multi channel example at /audio_channels endpoint](https://github.com/sockheadrps/RpaudioFastAPIExample/commit/f7365a1bfdd90b80fdab86b9d3b7094acfc5238a)**
-  - Additions: 423 - Deletions: 514 - Total Changes: 937
+- **rpaudio - [Merge pull request #16 from sockheadrps/MutexRefactor  Exceptions for changes vol and speed during application of scheduled …](https://github.com/sockheadrps/rpaudio/commit/ff5ecb1ded88ffaf4510e27996388f8d07bfa940)**
+  - Additions: 232 - Deletions: 64 - Total Changes: 296
 
-- **rpaudio - [Merge pull request #15 from sockheadrps/MutexRefactor  Refactored release](https://github.com/sockheadrps/rpaudio/commit/ee075c0acbaac75b9a1d8771488a617569b73ec6)**
-  - Additions: 13 - Deletions: 25 - Total Changes: 38
+- **rpaudio - [Exceptions for changes vol and speed during application of scheduled effects](https://github.com/sockheadrps/rpaudio/commit/7be9a669b9dc44557ef11871c4ca458f04ecd944)**
+  - Additions: 232 - Deletions: 64 - Total Changes: 296
 
-- **rpaudio - [Refactored release](https://github.com/sockheadrps/rpaudio/commit/981791d66e565257d0bb1c979f31fbf950c31679)**
-  - Additions: 13 - Deletions: 25 - Total Changes: 38
+- **RpaudioFastAPIExample - [fixed stop button](https://github.com/sockheadrps/RpaudioFastAPIExample/commit/42001c5b62e79b4979d8546f55f76de74ca1c5dd)**
+  - Additions: 4 - Deletions: 4 - Total Changes: 8
 
 
 ## 🔀 Recently Merged Pull Requests
@@ -74,12 +74,12 @@
 
 - **[Sounds.ext fixes](https://github.com/PythonistaGuild/TwitchIO/pull/454)**
   - Repository: [TwitchIO](https://github.com/PythonistaGuild/TwitchIO)
-  - Stars: 792
+  - Stars: 793
 
 # 📊 Python Stats:
 
-### Total Lines of Python Code: 11792
+### Total Lines of Python Code: 11915
 ### Total Libraries/Modules Imported: 103
-### Total Python Files: 133
+### Total Python Files: 134
 ![](DataVisuals/data.gif)
 
