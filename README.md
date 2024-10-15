@@ -50,7 +50,7 @@
 ---
 
 
-### Data last generated on: 2024-10-04 via [GitHub Action 11179663893](https://github.com/sockheadrps/sockheadrps/actions/runs/11179663893)
+### Data last generated on: 2024-10-15 via [GitHub Action 11349635176](https://github.com/sockheadrps/sockheadrps/actions/runs/11349635176)
 
 ## 🚀 Recent Commits
 
@@ -66,17 +66,17 @@
 
 ## 🔀 Recently Merged Pull Requests
 
+- **[update ubuntu build deps install ](https://github.com/Beaux44/Keystroke-Display/pull/7)**
+  - Repository: [Keystroke-Display](https://github.com/Beaux44/Keystroke-Display)
+  - Stars: 15
+
+- **[Release actions/workflow](https://github.com/Beaux44/Keystroke-Display/pull/6)**
+  - Repository: [Keystroke-Display](https://github.com/Beaux44/Keystroke-Display)
+  - Stars: 15
+
 - **[Feature/documentation](https://github.com/drinkincode/dungeon-of-ursina/pull/6)**
   - Repository: [dungeon-of-ursina](https://github.com/drinkincode/dungeon-of-ursina)
   - Stars: 0
-
-- **[requirements.txt](https://github.com/drinkincode/dungeon-of-ursina/pull/2)**
-  - Repository: [dungeon-of-ursina](https://github.com/drinkincode/dungeon-of-ursina)
-  - Stars: 0
-
-- **[Sounds.ext fixes](https://github.com/PythonistaGuild/TwitchIO/pull/454)**
-  - Repository: [TwitchIO](https://github.com/PythonistaGuild/TwitchIO)
-  - Stars: 793
 
 # 📊 Python Stats:
 
