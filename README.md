@@ -50,18 +50,18 @@
 ---
 
 
-### Data last generated on: 2024-10-15 via [GitHub Action 11349635176](https://github.com/sockheadrps/sockheadrps/actions/runs/11349635176)
+### Data last generated on: 2024-10-25 via [GitHub Action 11516740835](https://github.com/sockheadrps/sockheadrps/actions/runs/11516740835)
 
 ## 🚀 Recent Commits
 
-- **rpaudio - [Merge pull request #16 from sockheadrps/MutexRefactor  Exceptions for changes vol and speed during application of scheduled …](https://github.com/sockheadrps/rpaudio/commit/ff5ecb1ded88ffaf4510e27996388f8d07bfa940)**
-  - Additions: 232 - Deletions: 64 - Total Changes: 296
+- **rpaudio - [generated README badges from GitHub Action](https://github.com/sockheadrps/rpaudio/commit/8ffb5bbe1888d72d6eae8a06bad3dd3635982378)**
+  - Additions: 1 - Deletions: 1 - Total Changes: 2
 
-- **rpaudio - [Exceptions for changes vol and speed during application of scheduled effects](https://github.com/sockheadrps/rpaudio/commit/7be9a669b9dc44557ef11871c4ca458f04ecd944)**
-  - Additions: 232 - Deletions: 64 - Total Changes: 296
+- **rpaudio - [Test sleep speed](https://github.com/sockheadrps/rpaudio/commit/da364b12963c94b4c2c166c5e410813154fca990)**
+  - Additions: 2 - Deletions: 2 - Total Changes: 4
 
-- **RpaudioFastAPIExample - [fixed stop button](https://github.com/sockheadrps/RpaudioFastAPIExample/commit/42001c5b62e79b4979d8546f55f76de74ca1c5dd)**
-  - Additions: 4 - Deletions: 4 - Total Changes: 8
+- **rpaudio - [Versioning](https://github.com/sockheadrps/rpaudio/commit/153d7f8d70b1e16f64cd8ebccbd9b86ec6c8ab5c)**
+  - Additions: 238 - Deletions: 80 - Total Changes: 318
 
 
 ## 🔀 Recently Merged Pull Requests
@@ -80,8 +80,8 @@
 
 # 📊 Python Stats:
 
-### Total Lines of Python Code: 11915
-### Total Libraries/Modules Imported: 103
-### Total Python Files: 134
+### Total Lines of Python Code: 12026
+### Total Libraries/Modules Imported: 105
+### Total Python Files: 135
 ![](DataVisuals/data.gif)
 
