@@ -50,18 +50,18 @@
 ---
 
 
-### Data last generated on: 2024-10-25 via [GitHub Action 11516740835](https://github.com/sockheadrps/sockheadrps/actions/runs/11516740835)
+### Data last generated on: 2024-11-09 via [GitHub Action 11754562311](https://github.com/sockheadrps/sockheadrps/actions/runs/11754562311)
 
 ## 🚀 Recent Commits
 
-- **rpaudio - [generated README badges from GitHub Action](https://github.com/sockheadrps/rpaudio/commit/8ffb5bbe1888d72d6eae8a06bad3dd3635982378)**
+- **rpaudio - [added cli example](https://github.com/sockheadrps/rpaudio/commit/1720714790f8d6fa4b5bea68a2deb40abf1be2c3)**
+  - Additions: 99 - Deletions: 0 - Total Changes: 99
+
+- **dotfiles - [dotfiles](https://github.com/sockheadrps/dotfiles/commit/d502753c5131126ff3b30983e36ec91cc3fc2109)**
+  - Additions: 31506 - Deletions: 0 - Total Changes: 31506
+
+- **rpaudio - [generated README badges from GitHub Action](https://github.com/sockheadrps/rpaudio/commit/8508b1ee853ef3907cb53ccc0df628316d01133c)**
   - Additions: 1 - Deletions: 1 - Total Changes: 2
-
-- **rpaudio - [Test sleep speed](https://github.com/sockheadrps/rpaudio/commit/da364b12963c94b4c2c166c5e410813154fca990)**
-  - Additions: 2 - Deletions: 2 - Total Changes: 4
-
-- **rpaudio - [Versioning](https://github.com/sockheadrps/rpaudio/commit/153d7f8d70b1e16f64cd8ebccbd9b86ec6c8ab5c)**
-  - Additions: 238 - Deletions: 80 - Total Changes: 318
 
 
 ## 🔀 Recently Merged Pull Requests
@@ -74,14 +74,14 @@
   - Repository: [Keystroke-Display](https://github.com/Beaux44/Keystroke-Display)
   - Stars: 15
 
-- **[Feature/documentation](https://github.com/drinkincode/dungeon-of-ursina/pull/6)**
-  - Repository: [dungeon-of-ursina](https://github.com/drinkincode/dungeon-of-ursina)
-  - Stars: 0
+- **[Sounds.ext fixes](https://github.com/PythonistaGuild/TwitchIO/pull/454)**
+  - Repository: [TwitchIO](https://github.com/PythonistaGuild/TwitchIO)
+  - Stars: 798
 
 # 📊 Python Stats:
 
-### Total Lines of Python Code: 12026
+### Total Lines of Python Code: 12369
 ### Total Libraries/Modules Imported: 105
-### Total Python Files: 135
+### Total Python Files: 138
 ![](DataVisuals/data.gif)
 
