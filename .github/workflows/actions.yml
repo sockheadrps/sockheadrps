@@ -65,6 +65,11 @@ jobs:
       - name: Generate data gif
         run: |
           python Generator/utils/gifmaker.py
+      
+      - name: Adjust Readme
+        env:
+          TOKEN: ${{ secrets.TOKEN }}
+        run: python Generator/readme.py
 
       - name: Remove PythonDataGen
         run: |
