@@ -10,6 +10,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -28,8 +29,6 @@ jobs:
           rm -rf ./Generator
           mv -f PyProfileDataGen/Generator ./
           mv -f PyProfileDataGen/LICENSE ./
-          mv -f PyProfileDataGen/config.ini ./
-          mv -f PyProfileDataGen/local_run.bat ./
           mv -f PyProfileDataGen/requirements.txt ./
 
       - name: Set up Python
@@ -45,13 +44,14 @@ jobs:
       - name: Ensure DataVisuals directory exists
         run: mkdir -p DataVisuals
 
+      - name: Run 
+        run: python update_config.py
+        
       - name: Update_config.py and Run data_scrape.py
         env:
           TOKEN: ${{ secrets.TOKEN }}
           GITHUB_RUN_ID: ${{ github.run_id }}
-        run: |
-          python update_config.py
-          python Generator/utils/data_scrape.py
+        run: python Generator/utils/data_scrape.py
 
       - name: Gather Merged PRs
         run: python Generator/utils/mergedprs.py
@@ -61,18 +61,13 @@ jobs:
           python Generator/utils/graphing/construct_counts_graph.py
           python Generator/utils/graphing/line_prs_graph.py
           python Generator/utils/graphing/lines_graph.py
-          python Generator/utils/graphing/top_libraries_graph.py
+          python Generator/utils/graphing/top_libraries_graph.pya
           python Generator/utils/graphing/commit_heatmap.py
           python Generator/utils/graphing/word_cloud.py
 
       - name: Generate data gif
         run: |
           python Generator/utils/gifmaker.py
-
-      - name: Adjust Readme
-        env:
-          TOKEN: ${{ secrets.TOKEN }}
-        run: python Generator/readme.py
 
       - name: Remove PythonDataGen
         run: |
