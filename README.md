@@ -45,18 +45,18 @@
 ---
 
 
-### Data last generated on: 2024-11-14 via [GitHub Action 11836125797](https://github.com/sockheadrps/sockheadrps/actions/runs/11836125797)
+### Data last generated on: 2024-11-19 via [GitHub Action 11905735866](https://github.com/sockheadrps/sockheadrps/actions/runs/11905735866)
 
 ## 🚀 Recent Commits
 
-- **PyProfileDataGen - [added started template](https://github.com/sockheadrps/PyProfileDataGen/commit/9d22c6243871f0b096250f27f66d1c429e018162)**
-  - Additions: 36 - Deletions: 2 - Total Changes: 38
+- **kbhud - [Only send ws events to front end ws clients](https://github.com/sockheadrps/kbhud/commit/e01b3763f4ac21bbda3248af725daa70eafe0344)**
+  - Additions: 28 - Deletions: 21 - Total Changes: 49
 
-- **PyProfileDataGen - [removed old config update script](https://github.com/sockheadrps/PyProfileDataGen/commit/f4b1a9d8bf0c4fa052264fa8103e7915073418ee)**
-  - Additions: 6 - Deletions: 1 - Total Changes: 7
+- **kbhud - [Working on realtime key signals, added pics](https://github.com/sockheadrps/kbhud/commit/ccb5834179bed3889d884947c6453fe0ef2c95e7)**
+  - Additions: 250 - Deletions: 97 - Total Changes: 347
 
-- **PyProfileDataGen - [removed old config update script](https://github.com/sockheadrps/PyProfileDataGen/commit/b04a003162ee006f12b516e184034c45b88cf1d5)**
-  - Additions: 0 - Deletions: 3 - Total Changes: 3
+- **kbhud - [what in the fucking tokio buffer bullshit ass](https://github.com/sockheadrps/kbhud/commit/840a40fb00f43bc169513b28728b4009a34819a1)**
+  - Additions: 11 - Deletions: 4 - Total Changes: 15
 
 
 ## 🔀 Recently Merged Pull Requests
@@ -71,12 +71,12 @@
 
 - **[Sounds.ext fixes](https://github.com/PythonistaGuild/TwitchIO/pull/454)**
   - Repository: [TwitchIO](https://github.com/PythonistaGuild/TwitchIO)
-  - Stars: 799
+  - Stars: 801
 
 # 📊 Python Stats:
 
-### Total Lines of Python Code: 12105
+### Total Lines of Python Code: 12157
 ### Total Libraries/Modules Imported: 105
-### Total Python Files: 135
+### Total Python Files: 136
 ![](DataVisuals/data.gif)
 
