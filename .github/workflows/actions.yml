@@ -1,5 +1,9 @@
 name: Run Python Scripts For Data Gathering and Generation
 
+export CYTHON_LANGUAGE_LEVEL=3
+export CYTHON_FORCE_PYTHON=3
+
+
 on:
   push:
     branches:
@@ -37,8 +41,11 @@ jobs:
 
       - name: Install dependencies
         run: |
+          export CYTHON_LANGUAGE_LEVEL=3
+          export CYTHON_FORCE_PYTHON=3
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+
       
       - name: Ensure DataVisuals directory exists
         run: mkdir -p DataVisuals
