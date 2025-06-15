@@ -1,15 +1,10 @@
 name: Run Python Scripts For Data Gathering and Generation
 
-export CYTHON_LANGUAGE_LEVEL=3
-export CYTHON_FORCE_PYTHON=3
-
-
 on:
   push:
     branches:
       - main
   workflow_dispatch:
-
 
 jobs:
   build:
@@ -27,11 +22,10 @@ jobs:
         env:
           TOKEN: ${{ secrets.TOKEN }}
 
-      
       - name: Move files from PythonDataGen to current repository
         run: |
           rm -rf ./Generator
-          mv -f PyProfileDataGen/Generator ./
+          mv -f PyProfileDataGen/Generator ./ 
           mv -f PyProfileDataGen/requirements.txt ./
 
       - name: Set up Python
@@ -45,7 +39,6 @@ jobs:
           export CYTHON_FORCE_PYTHON=3
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-
       
       - name: Ensure DataVisuals directory exists
         run: mkdir -p DataVisuals
@@ -69,8 +62,7 @@ jobs:
           python Generator/utils/graphing/word_cloud.py
 
       - name: Generate data gif
-        run: |
-          python Generator/utils/gifmaker.py
+        run: python Generator/utils/gifmaker.py
 
       - name: Adjust Readme
         env:
