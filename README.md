@@ -45,38 +45,45 @@
 ---
 
 
-### Data last generated on: 2024-11-19 via [GitHub Action 11905735866](https://github.com/sockheadrps/sockheadrps/actions/runs/11905735866)
+### Data last generated on: 2025-08-11 via [GitHub Action None](https://github.com/sockheadrps/sockheadrps/actions/runs/None)
 
 ## 🚀 Recent Commits
 
-- **kbhud - [Only send ws events to front end ws clients](https://github.com/sockheadrps/kbhud/commit/e01b3763f4ac21bbda3248af725daa70eafe0344)**
-  - Additions: 28 - Deletions: 21 - Total Changes: 49
+- **PyProfileDataGen - [fixing gh action](https://github.com/sockheadrps/PyProfileDataGen/commit/5f2938fd8fd9c97df64742197046468c5169f5e8)**
+  - Additions: 368 - Deletions: 185 - Total Changes: 553
 
-- **kbhud - [Working on realtime key signals, added pics](https://github.com/sockheadrps/kbhud/commit/ccb5834179bed3889d884947c6453fe0ef2c95e7)**
-  - Additions: 250 - Deletions: 97 - Total Changes: 347
+- **pycourse - [link for voice cloner](https://github.com/sockheadrps/pycourse/commit/c43279d591b3d3d2af1c1cbbc52a8c3cd21312eb)**
+  - Additions: 1 - Deletions: 0 - Total Changes: 1
 
-- **kbhud - [what in the fucking tokio buffer bullshit ass](https://github.com/sockheadrps/kbhud/commit/840a40fb00f43bc169513b28728b4009a34819a1)**
-  - Additions: 11 - Deletions: 4 - Total Changes: 15
+- **PalindromeTransformerClassifier - [enter also triggers visualization generation](https://github.com/sockheadrps/PalindromeTransformerClassifier/commit/1085c137a3464ada29de0b6739eec0b1c3d23b81)**
+  - Additions: 16 - Deletions: 20 - Total Changes: 36
 
 
-## 🔀 Recently Merged Pull Requests
-
-- **[update ubuntu build deps install ](https://github.com/Beaux44/Keystroke-Display/pull/7)**
-  - Repository: [Keystroke-Display](https://github.com/Beaux44/Keystroke-Display)
-  - Stars: 15
-
-- **[Release actions/workflow](https://github.com/Beaux44/Keystroke-Display/pull/6)**
-  - Repository: [Keystroke-Display](https://github.com/Beaux44/Keystroke-Display)
-  - Stars: 15
+## 🔀 Popular Pull Requests
 
 - **[Sounds.ext fixes](https://github.com/PythonistaGuild/TwitchIO/pull/454)**
-  - Repository: [TwitchIO](https://github.com/PythonistaGuild/TwitchIO)
-  - Stars: 801
+  - Repository: [PythonistaGuild/TwitchIO](https://github.com/PythonistaGuild/TwitchIO)
+  - Stars: **847** | Merged: June 2024
+
+
+## 🔀 Recent Pull Requests
+
+- **[Refactored music handler, using decorator factories for event handling](https://github.com/YourStreamingTools/BotOfTheSpecter/pull/16)**
+  - Repository: [YourStreamingTools/BotOfTheSpecter](https://github.com/YourStreamingTools/BotOfTheSpecter)
+  - Stars: **2** | Merged: May 2025
+
+- **[Mini is not physically forcing me to make a pr](https://github.com/miniscruff/scopie-py/pull/1)**
+  - Repository: [miniscruff/scopie-py](https://github.com/miniscruff/scopie-py)
+  - Stars: **4** | Merged: March 2025
+
+- **[update ubuntu build deps install ](https://github.com/Beaux44/Keystroke-Display/pull/7)**
+  - Repository: [Beaux44/Keystroke-Display](https://github.com/Beaux44/Keystroke-Display)
+  - Stars: **23** | Merged: October 2024
 
 # 📊 Python Stats:
 
-### Total Lines of Python Code: 12157
-### Total Libraries/Modules Imported: 105
-### Total Python Files: 136
+### Total Lines of Python Code: 31512
+### Total Libraries/Modules Imported: 136
+### Total Python Files: 251
 ![](DataVisuals/data.gif)
 
