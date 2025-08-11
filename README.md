@@ -45,38 +45,38 @@
 ---
 
 
-### Data last generated on: 2024-11-19 via [GitHub Action 11905735866](https://github.com/sockheadrps/sockheadrps/actions/runs/11905735866)
+### Data last generated on: 2025-08-11 via [GitHub Action 16884089850](https://github.com/sockheadrps/sockheadrps/actions/runs/16884089850)
 
 ## 🚀 Recent Commits
 
-- **kbhud - [Only send ws events to front end ws clients](https://github.com/sockheadrps/kbhud/commit/e01b3763f4ac21bbda3248af725daa70eafe0344)**
-  - Additions: 28 - Deletions: 21 - Total Changes: 49
+- **BestPythonWsChatExample - [removed stale files](https://github.com/sockheadrps/BestPythonWsChatExample/commit/1f2a6ae3b2bf194028676c9035489ea076cd32bd)**
+  - Additions: 14 - Deletions: 8 - Total Changes: 22
 
-- **kbhud - [Working on realtime key signals, added pics](https://github.com/sockheadrps/kbhud/commit/ccb5834179bed3889d884947c6453fe0ef2c95e7)**
-  - Additions: 250 - Deletions: 97 - Total Changes: 347
+- **BestPythonWsChatExample - [readme update](https://github.com/sockheadrps/BestPythonWsChatExample/commit/690a520b907c3fe4bc8c9d3180dafed2fa4c94cf)**
+  - Additions: 0 - Deletions: 0 - Total Changes: 0
 
-- **kbhud - [what in the fucking tokio buffer bullshit ass](https://github.com/sockheadrps/kbhud/commit/840a40fb00f43bc169513b28728b4009a34819a1)**
-  - Additions: 11 - Deletions: 4 - Total Changes: 15
+- **BestPythonWsChatExample - [readme update](https://github.com/sockheadrps/BestPythonWsChatExample/commit/aa58ae7bf0b364a0afab3d583a1ac60236f158d3)**
+  - Additions: 0 - Deletions: 0 - Total Changes: 0
 
 
 ## 🔀 Recently Merged Pull Requests
 
+- **[Refactored music handler, using decorator factories for event handling](https://github.com/YourStreamingTools/BotOfTheSpecter/pull/16)**
+  - Repository: [BotOfTheSpecter](https://github.com/YourStreamingTools/BotOfTheSpecter)
+  - Stars: 2
+
+- **[Mini is not physically forcing me to make a pr](https://github.com/miniscruff/scopie-py/pull/1)**
+  - Repository: [scopie-py](https://github.com/miniscruff/scopie-py)
+  - Stars: 4
+
 - **[update ubuntu build deps install ](https://github.com/Beaux44/Keystroke-Display/pull/7)**
   - Repository: [Keystroke-Display](https://github.com/Beaux44/Keystroke-Display)
-  - Stars: 15
-
-- **[Release actions/workflow](https://github.com/Beaux44/Keystroke-Display/pull/6)**
-  - Repository: [Keystroke-Display](https://github.com/Beaux44/Keystroke-Display)
-  - Stars: 15
-
-- **[Sounds.ext fixes](https://github.com/PythonistaGuild/TwitchIO/pull/454)**
-  - Repository: [TwitchIO](https://github.com/PythonistaGuild/TwitchIO)
-  - Stars: 801
+  - Stars: 23
 
 # 📊 Python Stats:
 
-### Total Lines of Python Code: 12157
-### Total Libraries/Modules Imported: 105
-### Total Python Files: 136
+### Total Lines of Python Code: 7551
+### Total Libraries/Modules Imported: 47
+### Total Python Files: 50
 ![](DataVisuals/data.gif)
 
