@@ -45,18 +45,18 @@
 ---
 
 
-### Data last generated on: 2025-08-11 via [GitHub Action None](https://github.com/sockheadrps/sockheadrps/actions/runs/None)
+### Data last generated on: 2025-08-11 via [GitHub Action 16884699928](https://github.com/sockheadrps/sockheadrps/actions/runs/16884699928)
 
 ## 🚀 Recent Commits
 
+- **PyProfileDataGen - [fixing gh action](https://github.com/sockheadrps/PyProfileDataGen/commit/fb2eba80a191818e1480ff54615070173ec5a5fe)**
+  - Additions: 206 - Deletions: 15 - Total Changes: 221
+
+- **PyProfileDataGen - [fixing gh action](https://github.com/sockheadrps/PyProfileDataGen/commit/11b22abebe8656396082d2a1d2c187e4c2bb0476)**
+  - Additions: 408 - Deletions: 266 - Total Changes: 674
+
 - **PyProfileDataGen - [fixing gh action](https://github.com/sockheadrps/PyProfileDataGen/commit/5f2938fd8fd9c97df64742197046468c5169f5e8)**
   - Additions: 368 - Deletions: 185 - Total Changes: 553
-
-- **pycourse - [link for voice cloner](https://github.com/sockheadrps/pycourse/commit/c43279d591b3d3d2af1c1cbbc52a8c3cd21312eb)**
-  - Additions: 1 - Deletions: 0 - Total Changes: 1
-
-- **PalindromeTransformerClassifier - [enter also triggers visualization generation](https://github.com/sockheadrps/PalindromeTransformerClassifier/commit/1085c137a3464ada29de0b6739eec0b1c3d23b81)**
-  - Additions: 16 - Deletions: 20 - Total Changes: 36
 
 
 ## 🔀 Popular Pull Requests
@@ -82,8 +82,8 @@
 
 # 📊 Python Stats:
 
-### Total Lines of Python Code: 31512
-### Total Libraries/Modules Imported: 136
-### Total Python Files: 251
+### Total Lines of Python Code: 31830
+### Total Libraries/Modules Imported: 137
+### Total Python Files: 254
 ![](DataVisuals/data.gif)
 
