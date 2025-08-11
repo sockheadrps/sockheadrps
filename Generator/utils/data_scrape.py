@@ -9,13 +9,16 @@ from datetime import datetime, timedelta, timezone
 from pytz import timezone as tz
 import time
 import base64, binascii
+import sys
+import os
+sys.path.append(os.path.dirname(__file__))
+from config_helper import config
 
 
 
 # ===== Env & Config =====
 load_dotenv()
-config = configparser.ConfigParser()
-config.read("config.ini")
+
 
 DEBUG = config.getboolean("Debug", "debug", fallback=False)
 STEP_COUNT = config.getint("Debug", "step_count", fallback=10)
@@ -113,6 +116,30 @@ def list_repo_py_files_via_tree(repo):
             continue
         seen.add(item.path)
         out.append((item.path, item.sha, getattr(item, "size", None)))
+    return out
+
+def list_repo_all_files_via_tree(repo):
+    """Return list[(path, sha, size, extension)] for all files, with excludes and no duplicates."""
+    preflight(g)
+    default_branch = repo.default_branch
+    tree = safe_github_call(repo.get_git_tree, default_branch, recursive=True)
+
+    out = []
+    seen = set()
+    for item in tree.tree:
+        if item.type != "blob":
+            continue
+        if path_is_excluded(item.path):
+            continue
+        if item.path in seen:
+            continue
+        
+        # Get file extension
+        split_path = item.path.rsplit('.', 1)
+        extension = '.' + split_path[-1] if len(split_path) > 1 and split_path[-1] else item.path
+        
+        seen.add(item.path)
+        out.append((item.path, item.sha, getattr(item, "size", None), extension))
     return out
 
 def fetch_blob_text(repo, sha, size_hint=None):
@@ -355,10 +382,18 @@ for i, repo in enumerate(repo_iter):
     # OPTIONAL: collect commit messages too (commented to save calls/time)
     # If you want them, uncomment the msg append above when iterating commits.
 
-    # Process Python files using Git Tree API
+    # Process all files to collect file extensions and Python files for analysis
     try:
-        py_files = list_repo_py_files_via_tree(repo)
-        for path, sha, size in py_files:
+        all_files = list_repo_all_files_via_tree(repo)
+        
+        # First pass: collect all file extensions and count them
+        for path, sha, size, extension in all_files:
+            repo_info["file_extensions"][extension] = repo_info["file_extensions"].get(extension, 0) + 1
+        
+        # Second pass: process Python files for detailed analysis
+        py_files = [f for f in all_files if f[3] == '.py']  # Filter Python files by extension
+        
+        for path, sha, size, extension in py_files:
             text, skip_reason = fetch_blob_text(repo, sha, size)
             if text is None:
                 print(f"  ⚠️ {path} {skip_reason}")
@@ -368,8 +403,6 @@ for i, repo in enumerate(repo_iter):
             line_count = count_lines(text)
             repo_info["total_python_files"] += 1
             repo_info["total_python_lines"] += line_count
-            # Track extensions too (optional but you had it)
-            repo_info["file_extensions"][".py"] = repo_info["file_extensions"].get(".py", 0) + 1
 
             if DEBUG:
                 print(f"  📄 {path}: {line_count} lines (running total: {repo_info['total_python_lines']})")
@@ -378,6 +411,11 @@ for i, repo in enumerate(repo_iter):
             repo_info["libraries"].update(libs)
             for k, v in construct_counts.items():
                 repo_info["construct_counts"][k] += v
+                
+        if DEBUG:
+            print(f"  📁 Total files found: {len(all_files)}")
+            print(f"  📊 File extensions: {dict(repo_info['file_extensions'])}")
+            
     except GithubException as e:
         print(f"❌ Error processing repository {repo.name} with Trees API: {e}")
         continue
@@ -409,7 +447,8 @@ for i, repo in enumerate(repo_iter):
     print(f"     Total lines: {repo_info['total_python_lines']}")
     if repo_info['total_python_files'] > 0:
         print(f"     Average lines per file: {repo_info['total_python_lines'] / repo_info['total_python_files']:.1f}")
-    print(f"     Files processed:")
+    print(f"     All file types: {dict(repo_info['file_extensions'])}")
+    print(f"     Python files processed:")
     for py_file in repo_info['python_files']:
         print(f"       - {py_file}")
     print()
@@ -419,8 +458,16 @@ print("✅ Done. Final data saved to repo_data.json")
 # Print final summary
 total_python_files = sum(repo.get("total_python_files", 0) for repo in repo_data["repo_stats"])
 total_python_lines = sum(repo.get("total_python_lines", 0) for repo in repo_data["repo_stats"])
+
+# Aggregate all file extensions across repositories
+all_file_extensions = defaultdict(int)
+for repo in repo_data["repo_stats"]:
+    for ext, count in repo.get("file_extensions", {}).items():
+        all_file_extensions[ext] += count
+
 print(f"\n📊 FINAL SUMMARY:")
 print(f"   Total repositories: {len(repo_data['repo_stats'])}")
 print(f"   Total Python files: {total_python_files}")
 print(f"   Total Python lines: {total_python_lines}")
 print(f"   Average lines per file: {total_python_lines / total_python_files if total_python_files > 0 else 0:.1f}")
+print(f"   All file types found: {dict(all_file_extensions)}")
